@@ -2,12 +2,10 @@
 
 namespace InternalHelpDeskApi.Domain.Interfaces;
 
-public interface IChamadoRepository
+public interface IChamadoRepository : IRepositoryBase<Chamado>
 {
-    Task<Chamado?> GetByIdAsync(int id);
-    Task<IEnumerable<Chamado>> GetAllAsync();
-    Task<IEnumerable<Chamado>> GetByDescriptionAsync(string description);
-    Task AddAsync(Chamado chamado);
-    Task UpdateAsync(Chamado chamado);
-    Task SaveAsync();
+    Task SoftDeleteAsync(Chamado chamados);
+    Task<List<Chamado>> GetByDesc(string descricao);
+    Task<List<Chamado>> GetAllOpen();
+    Task<List<Chamado>> GetByCPF(string cpf);
 }

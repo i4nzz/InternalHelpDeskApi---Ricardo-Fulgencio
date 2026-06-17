@@ -1,9 +1,10 @@
-﻿using InternalHelpDeskApi.Infrastructure.Persistence;
+﻿using InternalHelpDeskApi.Domain.Interfaces;
+using InternalHelpDeskApi.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace InternalHelpDeskApi.Infrastructure
 {
-    public class RepositoryBase
+    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
         private readonly DataBase _context;
 
@@ -11,12 +12,13 @@ namespace InternalHelpDeskApi.Infrastructure
         {
             _context = context;
         }
-
-        public async Task<TEntity?> GetById<TEntity>(int id) where TEntity : class
+            
+        public async Task<TEntity?> GetById(int id) 
         {
             return await _context.Set<TEntity>().FindAsync(id);
         }
-        public async Task<IEnumerable<TEntity>> GetAllPaged<TEntity>(int pagina, int tamanhoPagina) where TEntity : class
+
+        public async Task<IEnumerable<TEntity>> GetAllPaged(int pagina, int tamanhoPagina)
         {
             return await _context.Set<TEntity>()
                 .Skip((pagina - 1) * tamanhoPagina)
@@ -31,7 +33,7 @@ namespace InternalHelpDeskApi.Infrastructure
             return entry.Entity;
         }
 
-        public async Task UpdateAsync<TEntity>(TEntity entity) where TEntity : class
+        public async Task UpdateAsync(TEntity entity)
         {
             _context.Set<TEntity>().Update(entity);
             await _context.SaveChangesAsync();

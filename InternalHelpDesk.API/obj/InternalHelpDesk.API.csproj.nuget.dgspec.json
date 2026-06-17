@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\_source\\InternalHelpDeskApi\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj": {}
+    "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj": {}
   },
   "projects": {
-    "F:\\_source\\InternalHelpDeskApi\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj": {
+    "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
+        "projectUniqueName": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
         "projectName": "InternalHelpDesk.API",
-        "projectPath": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
-        "packagesPath": "C:\\Users\\Ian\\.nuget\\packages\\",
-        "outputPath": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDesk.API\\obj\\",
+        "projectPath": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
+        "packagesPath": "C:\\Users\\matheus.silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matheus.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,12 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj": {
+                "projectPath": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,7 +49,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -74,7 +79,143 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj",
+        "projectName": "InternalHelpDeskApi.Application",
+        "projectPath": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj",
+        "packagesPath": "C:\\Users\\matheus.silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\matheus.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj": {
+                "projectPath": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj",
+        "projectName": "InternalHelpDeskApi.Domain",
+        "projectPath": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\matheus.silva\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\matheus.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

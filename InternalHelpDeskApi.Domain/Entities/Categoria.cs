@@ -7,5 +7,6 @@
         public int Peso { get; set; }
         public DateTime CriadoEm { get; set; }
         public DateTime? AtualizadoEm { get; set; }
+        public Prioridade Prioridade { get; set; }
     }
 }

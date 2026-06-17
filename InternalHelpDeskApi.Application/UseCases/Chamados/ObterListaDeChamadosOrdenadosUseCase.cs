@@ -1,0 +1,41 @@
+﻿using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Domain.Entities;
+using InternalHelpDeskApi.Domain.Interfaces;
+using InternalHelpDeskApi.Domain.Services;
+using InternalHelpDeskApi.Infrastructure.Structures;
+
+namespace InternalHelpDeskApi.Application.UseCases
+{
+    public class ObterListaDeChamadosOrdenadosUseCase : IObterListaDeChamadosOrdenadosUseCase
+    {
+        private readonly IChamadoRepository _chamadoRepository;
+
+        public ObterListaDeChamadosOrdenadosUseCase(IChamadoRepository chamadoRepository)
+        {
+            _chamadoRepository = chamadoRepository;
+        }
+
+        public async Task<List<Chamado>> ObterListaChamadosOrdenados()
+        {
+            List<Chamado> chamadosAbertos = await _chamadoRepository.GetAllOpen();
+
+            var regrasDePrioridade = new ChamadoPriorityComparer();
+            var filaDeAtendimento = new FilaPrioridadeHeap<Chamado>(regrasDePrioridade);
+
+            foreach (var chamado in chamadosAbertos)
+            {
+                filaDeAtendimento.Enfileirar(chamado);
+            }
+
+            var chamadosOrdenados = new List<Chamado>();
+
+            while (!filaDeAtendimento.EstaVazia)
+            {
+                Chamado proximo = filaDeAtendimento.Desenfileirar();
+                chamadosOrdenados.Add(proximo);
+            }
+
+            return chamadosOrdenados;
+        }
+    }
+}
