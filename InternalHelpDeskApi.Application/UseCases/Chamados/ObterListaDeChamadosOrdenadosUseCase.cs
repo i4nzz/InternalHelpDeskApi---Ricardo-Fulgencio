@@ -15,23 +15,23 @@ namespace InternalHelpDeskApi.Application.UseCases
             _chamadoRepository = chamadoRepository;
         }
 
-        public async Task<List<Chamado>> ObterListaChamadosOrdenados()
+        public async Task<List<ChamadosDtos>> ObterListaChamadosOrdenados()
         {
-            List<Chamado> chamadosAbertos = await _chamadoRepository.GetAllOpen();
+            List<ChamadosDtos> chamadosAbertos = await _chamadoRepository.GetAllOpen();
 
             var regrasDePrioridade = new ChamadoPriorityComparer();
-            var filaDeAtendimento = new FilaPrioridadeHeap<Chamado>(regrasDePrioridade);
+            var filaDeAtendimento = new FilaPrioridadeHeap<ChamadosDtos>(regrasDePrioridade);
 
             foreach (var chamado in chamadosAbertos)
             {
                 filaDeAtendimento.Enfileirar(chamado);
             }
 
-            var chamadosOrdenados = new List<Chamado>();
+            var chamadosOrdenados = new List<ChamadosDtos>();
 
             while (!filaDeAtendimento.EstaVazia)
             {
-                Chamado proximo = filaDeAtendimento.Desenfileirar();
+                ChamadosDtos proximo = filaDeAtendimento.Desenfileirar();
                 chamadosOrdenados.Add(proximo);
             }
 

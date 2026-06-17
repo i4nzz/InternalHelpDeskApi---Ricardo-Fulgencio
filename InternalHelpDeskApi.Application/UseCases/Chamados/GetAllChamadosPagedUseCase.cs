@@ -6,15 +6,15 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
 {
     public class GetAllChamadosPagedUseCase : IGetAllChamadosPagedUseCase
     {
-            private readonly IChamadoRepository _chamadoRepository;
-            public GetAllChamadosPagedUseCase(IChamadoRepository chamadoRepository)
-            {
-                _chamadoRepository = chamadoRepository;
-            }
-            public async Task<IEnumerable<Chamado>> GetAllDisorderedPaged(int pageNumber, int pageSize)
-            {
-                var chamados = await _chamadoRepository.GetAllPaged(pageNumber, pageSize);
-                return (chamados);
+        private readonly IChamadoRepository _chamadoRepository;
+        public GetAllChamadosPagedUseCase(IChamadoRepository chamadoRepository)
+        {
+            _chamadoRepository = chamadoRepository;
+        }
+        public async Task<IEnumerable<ChamadosDtos>> GetAllDisorderedPaged(int pageNumber, int pageSize)
+        {
+            var chamados = await _chamadoRepository.GetAllPaged(pageNumber, pageSize);
+            return chamados.ToList();
         }
     }
 }

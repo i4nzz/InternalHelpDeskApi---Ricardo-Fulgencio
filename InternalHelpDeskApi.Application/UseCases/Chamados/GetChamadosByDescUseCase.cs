@@ -11,7 +11,7 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
         {
             _chamadoRepository = chamadoRepository;
         }
-        public async Task<IEnumerable<Chamado>> ExecuteAsync(string descricao)
+        public async Task<IEnumerable<ChamadosDtos>> GetByDesc(string descricao)
         {
             var chamados = await _chamadoRepository.GetByDesc(descricao);
             return (chamados);

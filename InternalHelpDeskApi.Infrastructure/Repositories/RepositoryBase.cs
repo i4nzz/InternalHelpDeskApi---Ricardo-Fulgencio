@@ -1,4 +1,5 @@
 ﻿using InternalHelpDeskApi.Domain.Interfaces;
+using InternalHelpDeskApi.Domain.Interfaces;
 using InternalHelpDeskApi.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,7 +13,7 @@ namespace InternalHelpDeskApi.Infrastructure
         {
             _context = context;
         }
-            
+
         public async Task<TEntity?> GetById(int id) 
         {
             return await _context.Set<TEntity>().FindAsync(id);
@@ -26,9 +27,9 @@ namespace InternalHelpDeskApi.Infrastructure
                 .ToListAsync();
         }
 
-        public async Task<TEntity> AddAsync<TEntity>(TEntity entity) where TEntity : class
+        public async Task<T> AddAsync<T>(T entity) where T : class
         {
-            var entry = await _context.Set<TEntity>().AddAsync(entity);
+            var entry = await _context.Set<T>().AddAsync(entity);
             await _context.SaveChangesAsync();
             return entry.Entity;
         }
@@ -39,9 +40,9 @@ namespace InternalHelpDeskApi.Infrastructure
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync<TEntity>(TEntity entity) where TEntity : class
+        public async Task DeleteAsync<T>(T entity) where T : class
         {
-            _context.Set<TEntity>().Update(entity);
+            _context.Set<T>().Update(entity);
             await _context.SaveChangesAsync();
         }
     }

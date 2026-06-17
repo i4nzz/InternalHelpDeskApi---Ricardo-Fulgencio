@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InternalHelpDeskApi.Application\InternalHelpDeskApi.Application.csproj" />
+    <ProjectReference Include="..\InternalHelpDeskApi.Infrastructure\InternalHelpDeskApi.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

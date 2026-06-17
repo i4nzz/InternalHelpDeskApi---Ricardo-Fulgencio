@@ -4,6 +4,6 @@ namespace InternalHelpDeskApi.Application.Interfaces.UseCases
 {
     public interface IUpdateChamadoUseCase
     {
-        Task UpdateChamado(Chamado chamado);
+        Task UpdateChamado(ChamadosDtos chamado);
     }
 }

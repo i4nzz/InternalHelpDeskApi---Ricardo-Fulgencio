@@ -4,6 +4,6 @@ namespace InternalHelpDeskApi.Application.Interfaces.UseCases
 {
     public interface IDistribuirChamadosUseCase
     {
-        Task<Chamado?> DistribuirProximoChamado(int atendenteId);
+        Task<ChamadosDtos?> DistribuirProximoChamado(int atendenteId);
     }
 }

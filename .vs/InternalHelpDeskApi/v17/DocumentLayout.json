@@ -1,62 +1,128 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\_source\\InternalHelpDeskApi\\",
+  "WorkspaceRootPath": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.infrastructure\\repositories\\chamadosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\repositories\\chamadosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.infrastructure\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.infrastructure\\persistence\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\persistence\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.domain\\services\\filaprioridadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\services\\filaprioridadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.domain\\interfaces\\ichamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\interfaces\\ichamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.domain\\enums\\statuschamadoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\enums\\statuschamadoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.application\\usecases\\chamados\\chamadosdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|solutionrelative:internalhelpdeskapi.application\\usecases\\chamados\\chamadosdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.domain\\entities\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.domain\\entities\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\entities\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.domain\\entities\\atendente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdesk.api\\controllers\\chamadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|solutionrelative:internalhelpdesk.api\\controllers\\chamadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.infrastructure\\migrations\\databasemodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\migrations\\databasemodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.infrastructure\\migrations\\20260617233356_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\migrations\\20260617233356_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.infrastructure\\configurations\\injecaodependenciaextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\configurations\\injecaodependenciaextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.application\\usecases\\chamados\\distribuirchamadosusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|solutionrelative:internalhelpdeskapi.application\\usecases\\chamados\\distribuirchamadosusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdesk.api\\internalhelpdesk.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|solutionrelative:internalhelpdesk.api\\internalhelpdesk.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.domain\\entities\\atendente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\entities\\atendente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.domain\\entities\\prioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.domain\\entities\\prioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\entities\\prioridade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.domain\\entities\\solicitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.domain\\entities\\solicitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\entities\\solicitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdeskapi.infrastructure\\internalhelpdeskapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.infrastructure\\internalhelpdeskapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\internalhelpdeskapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|f:\\_source\\internalhelpdeskapi\\internalhelpdesk.api\\controllers\\chamadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|solutionrelative:internalhelpdesk.api\\controllers\\chamadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.application\\usecases\\chamados\\softdeletechamadousecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|solutionrelative:internalhelpdeskapi.application\\usecases\\chamados\\softdeletechamadousecases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.application\\usecases\\chamados\\getchamadosbycpfsolicitanteusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|solutionrelative:internalhelpdeskapi.application\\usecases\\chamados\\getchamadosbycpfsolicitanteusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.application\\usecases\\chamados\\getchamadosbydescusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|solutionrelative:internalhelpdeskapi.application\\usecases\\chamados\\getchamadosbydescusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.application\\interfaces\\usecases\\igetchamadobydescusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|solutionrelative:internalhelpdeskapi.application\\interfaces\\usecases\\igetchamadobydescusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdesk.api\\dtos\\chamados\\chamadosdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|solutionrelative:internalhelpdesk.api\\dtos\\chamados\\chamadosdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.domain\\interfaces\\ichamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\interfaces\\ichamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.application\\usecases\\chamados\\obterlistadechamadosordenadosusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|solutionrelative:internalhelpdeskapi.application\\usecases\\chamados\\obterlistadechamadosordenadosusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.application\\usecases\\chamados\\criarchamadousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|solutionrelative:internalhelpdeskapi.application\\usecases\\chamados\\criarchamadousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdesk.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|solutionrelative:internalhelpdesk.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.infrastructure\\persistence\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\persistence\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.infrastructure\\repositories\\chamadosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\repositories\\chamadosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.infrastructure\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B1C71D0-FB09-4590-9752-D8703CF1102A}|InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj|solutionrelative:internalhelpdeskapi.infrastructure\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.domain\\enums\\statuschamadoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265896CE-8476-40E8-883E-270AB3A0E294}|InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj|solutionrelative:internalhelpdeskapi.domain\\enums\\statuschamadoenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\ChamadosDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Services\\FilaPrioridadeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\MIGRATIONS_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MIGRATIONS_GUIDE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdesk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA7FDDC0-9B25-4444-88D0-D5A8B8AD3AB5}|InternalHelpDesk.API\\InternalHelpDesk.API.csproj|solutionrelative:internalhelpdesk.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|f:\\_source\\trabalho fugencio 1706\\internalhelpdeskapi---ricardo-fulgencio\\internalhelpdeskapi.application\\usecases\\chamados\\getallchamadospagedusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3880030D-B93A-41A6-B3E9-14CF784F9CA0}|InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj|solutionrelative:internalhelpdeskapi.application\\usecases\\chamados\\getallchamadospagedusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,138 +132,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 28,
+          "SelectedChildIndex": 41,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StatusChamadoEnum.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Enums\\StatusChamadoEnum.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Enums\\StatusChamadoEnum.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Enums\\StatusChamadoEnum.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Enums\\StatusChamadoEnum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:03:49.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RepositoryBase.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Infrastructure\\Repositories\\RepositoryBase.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Infrastructure\\Repositories\\RepositoryBase.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Infrastructure\\Repositories\\RepositoryBase.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Infrastructure\\Repositories\\RepositoryBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:40:06.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Categoria.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Categoria.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Categoria.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:20:28.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Prioridade.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Prioridade.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Prioridade.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Prioridade.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Prioridade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:17:53.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChamadosDtos.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\ChamadosDtos.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\ChamadosDtos.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\ChamadosDtos.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\ChamadosDtos.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:14:42.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FilaPrioridadeService.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Services\\FilaPrioridadeService.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Services\\FilaPrioridadeService.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Services\\FilaPrioridadeService.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Services\\FilaPrioridadeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:11:07.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IChamadoRepository.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Interfaces\\IChamadoRepository.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Interfaces\\IChamadoRepository.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Interfaces\\IChamadoRepository.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Interfaces\\IChamadoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:08:06.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Atendente.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Atendente.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Atendente.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Atendente.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Atendente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:05:18.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Chamado.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Chamado.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Chamado.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Chamado.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Chamado.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIA3wA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:03:00.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Solicitante.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Solicitante.cs",
-              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Solicitante.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Entities\\Solicitante.cs",
-              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Solicitante.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T23:00:30.456Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -264,11 +200,358 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataBaseModelSnapshot.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Migrations\\DataBaseModelSnapshot.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Infrastructure\\Migrations\\DataBaseModelSnapshot.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Migrations\\DataBaseModelSnapshot.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Infrastructure\\Migrations\\DataBaseModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:50:50.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20260617233356_InitialCreate.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Migrations\\20260617233356_InitialCreate.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Infrastructure\\Migrations\\20260617233356_InitialCreate.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Migrations\\20260617233356_InitialCreate.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Infrastructure\\Migrations\\20260617233356_InitialCreate.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:50:40.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GetAllChamadosPagedUseCase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetAllChamadosPagedUseCase.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetAllChamadosPagedUseCase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetAllChamadosPagedUseCase.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetAllChamadosPagedUseCase.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:45:52.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\Program.cs",
+              "RelativeDocumentMoniker": "InternalHelpDesk.API\\Program.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\Program.cs",
+              "RelativeToolTip": "InternalHelpDesk.API\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:32:37.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InternalHelpDesk.API",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
+              "RelativeDocumentMoniker": "InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
+              "RelativeToolTip": "InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-17T23:22:15.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MIGRATIONS_GUIDE.md",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\MIGRATIONS_GUIDE.md",
+              "RelativeDocumentMoniker": "MIGRATIONS_GUIDE.md",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\MIGRATIONS_GUIDE.md",
+              "RelativeToolTip": "MIGRATIONS_GUIDE.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-17T23:20:06.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IRepositoryBase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Interfaces\\IRepositoryBase.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Interfaces\\IRepositoryBase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Interfaces\\IRepositoryBase.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Interfaces\\IRepositoryBase.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:17:06.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InjecaoDependenciaExtensions.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Configurations\\InjecaoDependenciaExtensions.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Infrastructure\\Configurations\\InjecaoDependenciaExtensions.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Configurations\\InjecaoDependenciaExtensions.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Infrastructure\\Configurations\\InjecaoDependenciaExtensions.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:04:59.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetChamadosByCPFSolicitanteUseCase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetChamadosByCPFSolicitanteUseCase.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetChamadosByCPFSolicitanteUseCase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetChamadosByCPFSolicitanteUseCase.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetChamadosByCPFSolicitanteUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:00:41.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IGetChamadoByDescUseCase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\Interfaces\\UseCases\\IGetChamadoByDescUseCase.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Application\\Interfaces\\UseCases\\IGetChamadoByDescUseCase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\Interfaces\\UseCases\\IGetChamadoByDescUseCase.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Application\\Interfaces\\UseCases\\IGetChamadoByDescUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:57:21.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetChamadosByDescUseCase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetChamadosByDescUseCase.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetChamadosByDescUseCase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetChamadosByDescUseCase.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\GetChamadosByDescUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:55:06.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ObterListaDeChamadosOrdenadosUseCase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\ObterListaDeChamadosOrdenadosUseCase.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\ObterListaDeChamadosOrdenadosUseCase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\ObterListaDeChamadosOrdenadosUseCase.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\ObterListaDeChamadosOrdenadosUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:53:02.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DistribuirChamadosUseCase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\DistribuirChamadosUseCase.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\DistribuirChamadosUseCase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\DistribuirChamadosUseCase.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\DistribuirChamadosUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:43:07.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SoftDeleteChamadoUseCases.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\SoftDeleteChamadoUseCases.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\SoftDeleteChamadoUseCases.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\SoftDeleteChamadoUseCases.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\SoftDeleteChamadoUseCases.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:43:01.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\appsettings.json",
+              "RelativeDocumentMoniker": "InternalHelpDesk.API\\appsettings.json",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\appsettings.json",
+              "RelativeToolTip": "InternalHelpDesk.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-17T22:31:45.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ChamadosDtos.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\DTOs\\Chamados\\ChamadosDtos.cs",
+              "RelativeDocumentMoniker": "InternalHelpDesk.API\\DTOs\\Chamados\\ChamadosDtos.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\DTOs\\Chamados\\ChamadosDtos.cs",
+              "RelativeToolTip": "InternalHelpDesk.API\\DTOs\\Chamados\\ChamadosDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:29:36.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CriarChamadoUseCase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\CriarChamadoUseCase.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\CriarChamadoUseCase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\CriarChamadoUseCase.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Application\\UseCases\\Chamados\\CriarChamadoUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:27:17.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StatusChamadoEnum.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Enums\\StatusChamadoEnum.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Enums\\StatusChamadoEnum.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Enums\\StatusChamadoEnum.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Enums\\StatusChamadoEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:03:49.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Repositories\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Infrastructure\\Repositories\\RepositoryBase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Repositories\\RepositoryBase.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Infrastructure\\Repositories\\RepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:40:06.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Categoria.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Categoria.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Categoria.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:20:28.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Prioridade.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Prioridade.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Prioridade.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Prioridade.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Prioridade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:17:53.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ChamadosDtos.cs",
+              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\ChamadosDtos.cs",
+              "RelativeDocumentMoniker": "..\\..\\InternalHelpDeskApi\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\ChamadosDtos.cs",
+              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\ChamadosDtos.cs",
+              "RelativeToolTip": "..\\..\\InternalHelpDeskApi\\InternalHelpDeskApi.Application\\UseCases\\Chamados\\ChamadosDtos.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:14:42.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FilaPrioridadeService.cs",
+              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Services\\FilaPrioridadeService.cs",
+              "RelativeDocumentMoniker": "..\\..\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Services\\FilaPrioridadeService.cs",
+              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Services\\FilaPrioridadeService.cs",
+              "RelativeToolTip": "..\\..\\InternalHelpDeskApi\\InternalHelpDeskApi.Domain\\Services\\FilaPrioridadeService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:11:07.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IChamadoRepository.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Interfaces\\IChamadoRepository.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Interfaces\\IChamadoRepository.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Interfaces\\IChamadoRepository.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Interfaces\\IChamadoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:08:06.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Atendente.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Atendente.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Atendente.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Atendente.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Atendente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:05:18.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chamado.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Chamado.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Chamado.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Chamado.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Chamado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:03:00.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Solicitante.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Solicitante.cs",
+              "RelativeDocumentMoniker": "InternalHelpDeskApi.Domain\\Entities\\Solicitante.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\Entities\\Solicitante.cs",
+              "RelativeToolTip": "InternalHelpDeskApi.Domain\\Entities\\Solicitante.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T23:00:30.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "InternalHelpDeskApi.Infrastructure",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
+              "Title": "InternalHelpDeskApi.Infrastructure.csproj",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
               "RelativeDocumentMoniker": "InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
               "RelativeToolTip": "InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -277,11 +560,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 22,
               "Title": "DataBase.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Infrastructure\\Persistence\\DataBase.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Persistence\\DataBase.cs",
               "RelativeDocumentMoniker": "InternalHelpDeskApi.Infrastructure\\Persistence\\DataBase.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Infrastructure\\Persistence\\DataBase.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Persistence\\DataBase.cs",
               "RelativeToolTip": "InternalHelpDeskApi.Infrastructure\\Persistence\\DataBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -290,26 +573,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 23,
               "Title": "ChamadosRepository.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Infrastructure\\Repositories\\ChamadosRepository.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Repositories\\ChamadosRepository.cs",
               "RelativeDocumentMoniker": "InternalHelpDeskApi.Infrastructure\\Repositories\\ChamadosRepository.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDeskApi.Infrastructure\\Repositories\\ChamadosRepository.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\Repositories\\ChamadosRepository.cs",
               "RelativeToolTip": "InternalHelpDeskApi.Infrastructure\\Repositories\\ChamadosRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-16T22:49:11.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "ChamadosController.cs",
-              "DocumentMoniker": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDesk.API\\Controllers\\ChamadosController.cs",
+              "DocumentMoniker": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\Controllers\\ChamadosController.cs",
               "RelativeDocumentMoniker": "InternalHelpDesk.API\\Controllers\\ChamadosController.cs",
-              "ToolTip": "F:\\_source\\InternalHelpDeskApi\\InternalHelpDesk.API\\Controllers\\ChamadosController.cs",
+              "ToolTip": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\Controllers\\ChamadosController.cs",
               "RelativeToolTip": "InternalHelpDesk.API\\Controllers\\ChamadosController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA3wCEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowEIAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-16T22:42:38.436Z",
               "EditorCaption": ""

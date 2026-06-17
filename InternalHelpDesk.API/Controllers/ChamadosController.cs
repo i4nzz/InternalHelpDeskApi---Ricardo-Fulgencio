@@ -14,6 +14,9 @@ namespace InternalHelpDesk.API.Controllers
         private readonly ICriarChamadoUseCase _criarChamadoUseCase;
         private readonly IUpdateChamadoUseCase _updateChamadoUseCase;
         private readonly IObterListaDeChamadosOrdenadosUseCase _obterListaDeChamadosOrdenadosUseCase;
+        private readonly IDistribuirChamadosUseCase _distribuirChamadosUseCase;
+        private readonly IGetChamadoByDescUseCase _getChamadoByDescUseCase;
+        private readonly IGetChamadosByCPFSolicitanteUseCase _getChamadosByCPFSolicitanteUseCase;
         public ChamadosController
             (
             ISoftDeleteChamadoUseCase softDeleteChamado,
@@ -21,7 +24,10 @@ namespace InternalHelpDesk.API.Controllers
             IGetAllChamadosPagedUseCase getAllChamadosPagedUseCase,
             ICriarChamadoUseCase criarChamadoUseCase,
             IUpdateChamadoUseCase updateChamadoUseCase,
-            IObterListaDeChamadosOrdenadosUseCase obterListaDeChamadosOrdenadosUseCase
+            IObterListaDeChamadosOrdenadosUseCase obterListaDeChamadosOrdenadosUseCase,
+            IDistribuirChamadosUseCase distribuirChamadosUseCase,
+            IGetChamadoByDescUseCase getChamadoByDescUseCase,
+            IGetChamadosByCPFSolicitanteUseCase getChamadosByCPFSolicitanteUseCase
             )
         {
             _softDeleteChamado = softDeleteChamado;
@@ -30,50 +36,77 @@ namespace InternalHelpDesk.API.Controllers
             _criarChamadoUseCase = criarChamadoUseCase;
             _updateChamadoUseCase = updateChamadoUseCase;
             _obterListaDeChamadosOrdenadosUseCase = obterListaDeChamadosOrdenadosUseCase;
+            _distribuirChamadosUseCase = distribuirChamadosUseCase;
+            _getChamadoByDescUseCase = getChamadoByDescUseCase;
+            _getChamadosByCPFSolicitanteUseCase = getChamadosByCPFSolicitanteUseCase;
         }
 
         [HttpGet("chamados-ti")]
-        public IActionResult GetAllDisordered([FromQuery]int pageNumber, [FromQuery]int pageSize)
+        public async Task<IActionResult> GetAllDisordered([FromQuery] int pageNumber, [FromQuery] int pageSize)
         {
-           var result = _getAllChamadosUseCase.GetAllDisorderedPaged(pageNumber, pageSize);
+            var result = await _getAllChamadosUseCase.GetAllDisorderedPaged(pageNumber, pageSize);
             return Ok(result);
         }
         [HttpGet]
         [Route("chamados-ti/{id}")]
-        public IActionResult GetById([FromQuery] int id)
+        public async Task<IActionResult> GetById([FromQuery] int id)
         {
-            var result = _getChamadoByIdUseCase.GetById(id);
+            var result = await _getChamadoByIdUseCase.GetById(id);
             return Ok(result);
         }
 
         [HttpGet("chamados-ti/ordenados")]
-        public IActionResult GetAllOrdered()
+        public async Task<IActionResult> GetAllOrdered()
         {
-            var result = _obterListaDeChamadosOrdenadosUseCase.ObterListaChamadosOrdenados();
+            var result = await _obterListaDeChamadosOrdenadosUseCase.ObterListaChamadosOrdenados();
             return Ok(result);
         }
 
         [HttpPost]
         [Route("chamados-ti")]
-        public IActionResult CriarChamado(Chamado chamado)
+        public async Task<IActionResult> CriarChamado(ChamadosDtos chamado)
         {
-            var result = _criarChamadoUseCase.CriarChamado(chamado);
-            return NoContent();
+            var result = await _criarChamadoUseCase.CriarChamado(chamado);
+            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
         }
 
         [HttpPut]
         [Route("chamados-ti")]
-        public IActionResult Update(Chamado chamado)
+        public async Task<IActionResult> Update(ChamadosDtos chamado)
         {
-            _updateChamadoUseCase.UpdateChamado(chamado);
+            await _updateChamadoUseCase.UpdateChamado(chamado);
             return NoContent();
         }
         [HttpDelete]
         [Route("chamados-ti/{id}")]
-        public IActionResult Delete([FromQuery] int id)
+        public async Task<IActionResult> Delete([FromQuery] int id)
         {
-            _softDeleteChamado.SoftDeleteChamado(id);
+            await _softDeleteChamado.SoftDeleteChamado(id);
             return NoContent();
+        }
+
+        [HttpGet]
+        [Route("chamados-ti/distribuir")]
+        public async Task<IActionResult> DistribuirChamado([FromQuery] int id)
+        {
+            var result = await _distribuirChamadosUseCase.DistribuirProximoChamado(id);
+            return Ok(result);
+        }
+
+        [HttpGet]
+        [Route("chamados-ti/buscar-por-cpf")]
+        public async Task<IActionResult> GetByCpf(string cpf)
+        {
+            var result = await _getChamadosByCPFSolicitanteUseCase.GetByCPF(cpf);
+            return Ok(result);
+        }
+
+        [HttpGet]
+        [Route("chamados-ti/buscar-por-descricao")]
+        public async Task<IActionResult> GetByDesc(string descricao)
+        {
+            var result = await _getChamadoByDescUseCase.GetByDesc(descricao);
+            return Ok(result);
         }
     }
 }

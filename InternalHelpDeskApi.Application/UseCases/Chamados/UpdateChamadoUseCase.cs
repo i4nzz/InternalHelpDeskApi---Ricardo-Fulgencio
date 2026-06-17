@@ -11,7 +11,7 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
         {
             _chamadoRepository = chamadoRepository;
         }
-        public Task UpdateChamado(Chamado chamado)
+        public Task UpdateChamado(ChamadosDtos chamado)
         {
             return _chamadoRepository.UpdateAsync(chamado);
         }

@@ -4,6 +4,6 @@ namespace InternalHelpDeskApi.Application.Interfaces.UseCases
 {
     public interface IGetAllChamadosPagedUseCase
     {
-        Task<IEnumerable<Chamado>> GetAllDisorderedPaged(int pageNumber, int pageSize);
+        Task<IEnumerable<ChamadosDtos>> GetAllDisorderedPaged(int pageNumber, int pageSize);
     }
 }

@@ -11,7 +11,7 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
         {
             _chamadoRepository = chamadoRepository;
         }
-        public async Task<IEnumerable<Chamado>> GetByCPF(string cpfSolicitante)
+        public async Task<IEnumerable<ChamadosDtos>> GetByCPF(string cpfSolicitante)
         {
             var chamados = await _chamadoRepository.GetByCPF(cpfSolicitante);
             return (chamados);

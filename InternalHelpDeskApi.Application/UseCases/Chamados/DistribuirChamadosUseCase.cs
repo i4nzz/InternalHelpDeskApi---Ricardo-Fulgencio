@@ -17,7 +17,7 @@ namespace InternalHelpDeskApi.Application.UseCases
             _atendenteRepository = atendenteRepository;
         }
 
-        public async Task<Chamado?> DistribuirProximoChamado(int atendenteId)
+        public async Task<ChamadosDtos?> DistribuirProximoChamado(int atendenteId)
         {
             var atendente = await _atendenteRepository.GetById(atendenteId);
 
@@ -30,22 +30,22 @@ namespace InternalHelpDeskApi.Application.UseCases
             }
             return chamadoUrgente;
         }
-        private async Task<Chamado?> BuscarChamadoUrgente(int atendenteId)
+        private async Task<ChamadosDtos?> BuscarChamadoUrgente(int atendenteId)
         {
-            List<Chamado> chamadosAbertos = await _chamadoRepository.GetAllOpen();
+            List<ChamadosDtos> chamadosAbertos = await _chamadoRepository.GetAllOpen();
 
             if (chamadosAbertos.Count == 0)
                 return null;
 
             var regrasDePrioridade = new ChamadoPriorityComparer();
-            var filaDeAtendimento = new FilaPrioridadeHeap<Chamado>(regrasDePrioridade);
+            var filaDeAtendimento = new FilaPrioridadeHeap<ChamadosDtos>(regrasDePrioridade);
 
             foreach (var chamado in chamadosAbertos)
             {
                 filaDeAtendimento.Enfileirar(chamado);
             }
 
-            Chamado chamadoMaisUrgente = filaDeAtendimento.Desenfileirar();
+            ChamadosDtos chamadoMaisUrgente = filaDeAtendimento.Desenfileirar();
             return chamadoMaisUrgente;
         }
 

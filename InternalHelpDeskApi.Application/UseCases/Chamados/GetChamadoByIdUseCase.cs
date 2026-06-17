@@ -11,7 +11,7 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
         {
             _chamadoRepository = chamadoRepository;
         }
-        public async Task<Chamado> GetById(int id)
+        public async Task<ChamadosDtos> GetById(int id)
         {
             var chamado = await _chamadoRepository.GetById(id);
             if (chamado == null)
