@@ -1,75 +1,15 @@
-﻿using InternalHelpDeskApi.Domain.Enums;
+﻿using InternalHelpDeskApi.Domain.Entities;
+using InternalHelpDeskApi.Domain.Enums;
 
 namespace InternalHelpDeskApi.Application.UseCases.Chamados;
 
-public class ChamadosDtos
+public class CriarChamadosDtos
 {
-    #region Inputs
-    public record AbrirChamadoInput(
-        string Titulo
-        , string Descricao
-        , CategoriaChamadoEnum Categoria
-        , NivelUrgenciaEnum Urgencia
-        , NivelImpactoEnum Impacto
-        , Guid SolicitanteId
-    );
-
-    public record IniciarAtendimentoInput(
-        Guid ChamadoId
-        , Guid AtendenteId
-    );
-
-    public record ResolverChamadoInput(
-        Guid ChamadoId
-        , string Resolucao
-    );
-    #endregion
-
-    #region Outputs
-    public record ChamadoResumoOutput(
-        Guid Id
-        , string Titulo
-        , CategoriaChamadoEnum Categoria
-        , NivelUrgenciaEnum Urgencia
-        , NivelImpactoEnum Impacto
-        , StatusChamadoEnum Status
-        , int ScorePrioridade
-        , string NomeSolicitante
-        , string SetorSolicitante
-        , CargoFuncionarioEnum CargoSolicitante
-        , DateTime AberturaEm
-        , double TempoEsperaMinutos
-    );
-
-    public record ChamadoDetalheOutput(
-        Guid Id
-        , string Titulo
-        , string Descricao
-        , CategoriaChamadoEnum Categoria
-        , NivelUrgenciaEnum Urgencia
-        , NivelImpactoEnum Impacto
-        , StatusChamadoEnum Status
-        , int ScorePrioridade
-        , string NomeSolicitante
-        , string SetorSolicitante
-        , CargoFuncionarioEnum CargoSolicitante
-        , string? NomeAtendente
-        , DateTime AberturaEm
-        , DateTime? InicioAtendimentoEm
-        , DateTime? EncerramentoEm
-        , string? Resolucao
-        , double TempoEsperaMinutos
-    );
-
-    public record ProximoChamadoOutput(
-        Guid Id
-        , string Titulo
-        , int ScorePrioridade
-        , NivelUrgenciaEnum Urgencia
-        , NivelImpactoEnum Impacto
-        , string NomeSolicitante
-        , string SetorSolicitante
-        , int TotalNaFila
-    );
-    #endregion
+    public string Titulo { get; set; } = string.Empty;
+    public string Descricao { get; set; } = string.Empty;
+    public Categoria Categoria { get; set; }
+    public StatusChamadoEnum Status { get; set; } = StatusChamadoEnum.Aberto;
+    public string? Resolucao { get; set; }
+    public Solicitante Solicitante { get; set; }
+    public Atendente? Atendente { get; set; } = null;
 }
