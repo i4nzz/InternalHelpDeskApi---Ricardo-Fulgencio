@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace InternalHelpDeskApi.Infrastructure.Migrations
 {
-    [DbContext(typeof(DataBase))]
+    [DbContext(typeof(HelpDeskContext))]
     [Migration("20260617233356_InitialCreate")]
     partial class InitialCreate
     {

@@ -4,7 +4,6 @@ using global::InternalHelpDeskApi.Infrastructure.Repositories;
 using InternalHelpDeskApi.Application;
 using InternalHelpDeskApi.Application.Interfaces.UseCases;
 using InternalHelpDeskApi.Application.UseCases;
-using InternalHelpDeskApi.Application.UseCases;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +17,7 @@ namespace InternalHelpDeskApi.Infrastructure.Configurations
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             if (!string.IsNullOrEmpty(connectionString))
             {
-                services.AddDbContext<DataBase>(options => options.UseSqlServer(connectionString));
+                services.AddDbContext<HelpDeskContext>(options => options.UseSqlServer(connectionString));
             }
 
             services.AddScoped<IChamadoRepository, ChamadosRepository>();
@@ -30,7 +29,7 @@ namespace InternalHelpDeskApi.Infrastructure.Configurations
             services.AddScoped<IGetChamadoByDescUseCase, GetChamadosByDescUseCase>();
             services.AddScoped<IGetAllChamadosPagedUseCase, GetAllChamadosPagedUseCase>();
             services.AddScoped<ICriarChamadoUseCase, CriarChamadoUseCase>();
-            services.AddScoped<IDistribuirChamadosUseCase, DistribuirProximoChamadoUseCase>();
+            services.AddScoped<IChamadosUrgentesUseCase, DistribuirProximoChamadoUseCase>();
             services.AddScoped<IGetChamadosByCPFSolicitanteUseCase, GetChamadosByCPFSolicitanteUseCase>();
             services.AddScoped<IObterListaDeChamadosOrdenadosUseCase, ObterListaDeChamadosOrdenadosUseCase>();
 

@@ -6,7 +6,7 @@ using InternalHelpDeskApi.Infrastructure.Structures;
 
 namespace InternalHelpDeskApi.Application.UseCases
 {
-    public class DistribuirProximoChamadoUseCase : IDistribuirChamadosUseCase
+    public class DistribuirProximoChamadoUseCase : IChamadosUrgentesUseCase
     {
         private readonly IChamadoRepository _chamadoRepository;
         private readonly IAtendenteRepository _atendenteRepository;
@@ -21,7 +21,7 @@ namespace InternalHelpDeskApi.Application.UseCases
         {
             var atendente = await _atendenteRepository.GetById(atendenteId);
 
-            var chamadoUrgente = await BuscarChamadoUrgente(atendenteId);
+            var chamadoUrgente = await BuscarChamadoUrgente();
             if (chamadoUrgente != null)
             {
                 chamadoUrgente.Atendente = atendente;
@@ -30,7 +30,7 @@ namespace InternalHelpDeskApi.Application.UseCases
             }
             return chamadoUrgente;
         }
-        private async Task<Chamados?> BuscarChamadoUrgente(int atendenteId)
+        public async Task<Chamados?> BuscarChamadoUrgente()
         {
             List<Chamados> chamadosAbertos = await _chamadoRepository.GetAllOpen();
 

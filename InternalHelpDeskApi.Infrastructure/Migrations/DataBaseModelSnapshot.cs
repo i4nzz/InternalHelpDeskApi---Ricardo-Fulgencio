@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace InternalHelpDeskApi.Infrastructure.Migrations
 {
-    [DbContext(typeof(DataBase))]
+    [DbContext(typeof(HelpDeskContext))]
     partial class DataBaseModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

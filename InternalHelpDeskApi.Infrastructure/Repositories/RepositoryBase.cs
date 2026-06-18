@@ -1,5 +1,4 @@
 ﻿using InternalHelpDeskApi.Domain.Interfaces;
-using InternalHelpDeskApi.Domain.Interfaces;
 using InternalHelpDeskApi.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,9 +6,9 @@ namespace InternalHelpDeskApi.Infrastructure
 {
     public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
-        private readonly DataBase _context;
+        private readonly HelpDeskContext _context;
 
-        public RepositoryBase(DataBase context)
+        public RepositoryBase(HelpDeskContext context)
         {
             _context = context;
         }
@@ -27,9 +26,9 @@ namespace InternalHelpDeskApi.Infrastructure
                 .ToListAsync();
         }
 
-        public async Task<T> AddAsync<T>(T entity) where T : class
+        public async Task<TEntity> AddAsync(TEntity entity)
         {
-            var entry = await _context.Set<T>().AddAsync(entity);
+            var entry = await _context.Set<TEntity>().AddAsync(entity);
             await _context.SaveChangesAsync();
             return entry.Entity;
         }
@@ -37,12 +36,6 @@ namespace InternalHelpDeskApi.Infrastructure
         public async Task UpdateAsync(TEntity entity)
         {
             _context.Set<TEntity>().Update(entity);
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task DeleteAsync<T>(T entity) where T : class
-        {
-            _context.Set<T>().Update(entity);
             await _context.SaveChangesAsync();
         }
     }

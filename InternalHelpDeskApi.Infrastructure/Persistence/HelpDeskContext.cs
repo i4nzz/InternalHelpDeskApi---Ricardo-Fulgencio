@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InternalHelpDeskApi.Infrastructure.Persistence
 {
-    public class DataBase : DbContext
+    public class HelpDeskContext : DbContext
     {
-        public DataBase(DbContextOptions<DataBase> options) : base(options)
+        public HelpDeskContext(DbContextOptions<HelpDeskContext> options) : base(options)
         {
         }
         public DbSet<Solicitante> Solicitantes { get; set; }
@@ -17,7 +17,7 @@ namespace InternalHelpDeskApi.Infrastructure.Persistence
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(DataBase).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(HelpDeskContext).Assembly);
         }
     }
 }

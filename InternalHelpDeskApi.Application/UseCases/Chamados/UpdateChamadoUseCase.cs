@@ -1,6 +1,7 @@
 ﻿using InternalHelpDeskApi.Application.Interfaces.UseCases;
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
+using Mapster;
 
 namespace InternalHelpDeskApi.Application.UseCases
 {
@@ -11,9 +12,11 @@ namespace InternalHelpDeskApi.Application.UseCases
         {
             _chamadoRepository = chamadoRepository;
         }
-        public Task UpdateChamado(Chamados chamado)
+        public Task UpdateChamado(int id, ChamadosDto chamado)
         {
-            return _chamadoRepository.UpdateAsync(chamado);
+            var chamadoBanco = chamado.Adapt<Chamados>();
+            chamadoBanco.Id = id;
+            return _chamadoRepository.UpdateAsync(chamadoBanco);
         }
     }
 }

@@ -5,6 +5,6 @@ namespace InternalHelpDeskApi.Application.Interfaces.UseCases
 {
     public interface ICriarChamadoUseCase
     {
-        Task<Chamados> CriarChamado(CriarChamadosDto novoChamado);  
+        Task<Chamados> CriarChamado(ChamadosDto novoChamado);  
     }
 }

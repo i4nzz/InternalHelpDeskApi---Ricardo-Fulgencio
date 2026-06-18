@@ -6,8 +6,8 @@ namespace InternalHelpDeskApi.Infrastructure.Repositories
 {
     public class AtendenteRepository : RepositoryBase<Atendente>, IAtendenteRepository
     {
-        private readonly DataBase _context;
-        public AtendenteRepository(DataBase context) : base(context)
+        private readonly HelpDeskContext _context;
+        public AtendenteRepository(HelpDeskContext context) : base(context)
         {
             _context = context;
         }

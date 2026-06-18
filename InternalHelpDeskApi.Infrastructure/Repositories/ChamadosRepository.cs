@@ -7,8 +7,8 @@ namespace InternalHelpDeskApi.Infrastructure
 {
     public class ChamadosRepository : RepositoryBase<Chamados>, IChamadoRepository
     {
-        private readonly DataBase _context;
-        public ChamadosRepository(DataBase context) : base(context)
+        private readonly HelpDeskContext _context;
+        public ChamadosRepository(HelpDeskContext context) : base(context)
         {
             _context = context;
         }
