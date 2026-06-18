@@ -42,14 +42,21 @@ namespace InternalHelpDesk.API.Controllers
             _getChamadosByCPFSolicitanteUseCase = getChamadosByCPFSolicitanteUseCase;
         }
 
-        [HttpGet("chamados-ti")]
+        [HttpGet("chamados-ti/GetAllDisordered")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetAllDisordered([FromQuery] int pageNumber, [FromQuery] int pageSize)
         {
             var result = await _getAllChamadosUseCase.GetAllDisorderedPaged(pageNumber, pageSize);
             return Ok(result);
         }
         [HttpGet]
-        [Route("chamados-ti/{id}")]
+        [Route("chamados-ti/GetById")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetById([FromQuery] int id)
         {
             var result = await _getChamadoByIdUseCase.GetById(id);
@@ -57,6 +64,9 @@ namespace InternalHelpDesk.API.Controllers
         }
 
         [HttpGet("chamados-ti/ordenados")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetAllOrdered()
         {
             var result = await _obterListaDeChamadosOrdenadosUseCase.ObterListaChamadosOrdenados();
@@ -65,6 +75,9 @@ namespace InternalHelpDesk.API.Controllers
 
         [HttpPost]
         [Route("chamados-ti")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> CriarChamado(CriarChamadosDto chamado)
         {
             var result = await _criarChamadoUseCase.CriarChamado(chamado);
@@ -73,13 +86,21 @@ namespace InternalHelpDesk.API.Controllers
 
         [HttpPut]
         [Route("chamados-ti")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Update(Chamados chamado)
         {
             await _updateChamadoUseCase.UpdateChamado(chamado);
             return NoContent();
         }
         [HttpDelete]
-        [Route("chamados-ti/{id}")]
+        [Route("chamados-ti")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Delete([FromQuery] int id)
         {
             await _softDeleteChamado.SoftDeleteChamado(id);
@@ -88,6 +109,10 @@ namespace InternalHelpDesk.API.Controllers
 
         [HttpGet]
         [Route("chamados-ti/distribuir")]
+        [ProducesResponseType(typeof(Chamados), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> DistribuirChamado([FromQuery] int id)
         {
             var result = await _distribuirChamadosUseCase.DistribuirProximoChamado(id);
@@ -96,6 +121,10 @@ namespace InternalHelpDesk.API.Controllers
 
         [HttpGet]
         [Route("chamados-ti/buscar-por-cpf")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetByCpf(string cpf)
         {
             var result = await _getChamadosByCPFSolicitanteUseCase.GetByCPF(cpf);
@@ -104,6 +133,10 @@ namespace InternalHelpDesk.API.Controllers
 
         [HttpGet]
         [Route("chamados-ti/buscar-por-descricao")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetByDesc(string descricao)
         {
             var result = await _getChamadoByDescUseCase.GetByDesc(descricao);
