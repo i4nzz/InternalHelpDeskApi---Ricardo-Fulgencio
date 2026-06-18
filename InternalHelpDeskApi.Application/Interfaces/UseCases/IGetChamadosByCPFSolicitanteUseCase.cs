@@ -4,6 +4,6 @@ namespace InternalHelpDeskApi.Application.Interfaces.UseCases
 {
     public interface IGetChamadosByCPFSolicitanteUseCase
     {
-        Task<IEnumerable<ChamadosDtos>> GetByCPF(string cpfSolicitante);
+        Task<IEnumerable<Chamados>> GetByCPF(string cpfSolicitante);
     }
 }

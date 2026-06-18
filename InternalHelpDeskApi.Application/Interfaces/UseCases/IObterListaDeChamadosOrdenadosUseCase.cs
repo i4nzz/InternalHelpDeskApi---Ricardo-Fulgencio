@@ -4,6 +4,6 @@ namespace InternalHelpDeskApi.Application.Interfaces.UseCases
 {
     public interface IObterListaDeChamadosOrdenadosUseCase
     {
-        Task<List<ChamadosDtos>> ObterListaChamadosOrdenados();
+        Task<List<Chamados>> ObterListaChamadosOrdenados();
     }
 }

@@ -4,6 +4,6 @@ namespace InternalHelpDeskApi.Application.Interfaces.UseCases
 {
     public interface IGetChamadoByDescUseCase
     {
-        Task<IEnumerable<ChamadosDtos>> GetByDesc(string descricao);
+        Task<IEnumerable<Chamados>> GetByDesc(string descricao);
     }
 }

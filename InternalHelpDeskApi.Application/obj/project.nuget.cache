@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jU51MYdoXZA=",
+  "dgSpecHash": "1TjKKHiVNOE=",
   "success": true,
-  "projectFilePath": "F:\\_source\\trabalho fugencio 1706\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matheus\\.nuget\\packages\\mapster\\10.0.8\\mapster.10.0.8.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\mapster.core\\10.0.8\\mapster.core.10.0.8.nupkg.sha512"
+  ],
   "logs": []
 }

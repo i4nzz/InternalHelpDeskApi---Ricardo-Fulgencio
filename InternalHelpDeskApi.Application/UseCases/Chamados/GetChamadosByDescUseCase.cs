@@ -2,7 +2,7 @@
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 
-namespace InternalHelpDeskApi.Application.UseCases.Chamados
+namespace InternalHelpDeskApi.Application.UseCases
 {
     public class GetChamadosByDescUseCase : IGetChamadoByDescUseCase
     {
@@ -11,7 +11,7 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
         {
             _chamadoRepository = chamadoRepository;
         }
-        public async Task<IEnumerable<ChamadosDtos>> GetByDesc(string descricao)
+        public async Task<IEnumerable<Chamados>> GetByDesc(string descricao)
         {
             var chamados = await _chamadoRepository.GetByDesc(descricao);
             return (chamados);

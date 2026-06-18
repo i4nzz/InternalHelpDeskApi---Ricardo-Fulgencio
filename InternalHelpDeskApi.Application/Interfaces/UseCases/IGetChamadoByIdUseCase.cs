@@ -4,6 +4,6 @@ namespace InternalHelpDeskApi.Application.Interfaces.UseCases
 {
     public interface IGetChamadoByIdUseCase
     {
-        Task<ChamadosDtos> GetById(int id);
+        Task<Chamados> GetById(int id);
     }
 }

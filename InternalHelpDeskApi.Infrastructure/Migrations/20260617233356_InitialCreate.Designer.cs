@@ -81,7 +81,7 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                     b.ToTable("Categorias");
                 });
 
-            modelBuilder.Entity("InternalHelpDeskApi.Domain.Entities.ChamadosDtos", b =>
+            modelBuilder.Entity("InternalHelpDeskApi.Domain.Entities.Chamados", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -189,7 +189,7 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                     b.ToTable("Solicitantes");
                 });
 
-            modelBuilder.Entity("InternalHelpDeskApi.Domain.Entities.ChamadosDtos", b =>
+            modelBuilder.Entity("InternalHelpDeskApi.Domain.Entities.Chamados", b =>
                 {
                     b.HasOne("InternalHelpDeskApi.Domain.Entities.Atendente", "Atendente")
                         .WithMany()

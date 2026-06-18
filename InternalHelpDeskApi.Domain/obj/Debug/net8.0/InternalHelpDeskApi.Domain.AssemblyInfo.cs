@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InternalHelpDeskApi.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e3e321e77a66154e0aae34929529a5566784d73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd4b60a64466bcbc7e34a0a151da56afe6d24b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("InternalHelpDeskApi.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InternalHelpDeskApi.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

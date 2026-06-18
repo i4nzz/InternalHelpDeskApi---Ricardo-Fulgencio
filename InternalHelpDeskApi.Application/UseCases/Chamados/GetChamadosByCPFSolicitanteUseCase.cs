@@ -2,7 +2,7 @@
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 
-namespace InternalHelpDeskApi.Application.UseCases.Chamados
+namespace InternalHelpDeskApi.Application.UseCases
 {
     public class GetChamadosByCPFSolicitanteUseCase : IGetChamadosByCPFSolicitanteUseCase
     {
@@ -11,7 +11,7 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
         {
             _chamadoRepository = chamadoRepository;
         }
-        public async Task<IEnumerable<ChamadosDtos>> GetByCPF(string cpfSolicitante)
+        public async Task<IEnumerable<Chamados>> GetByCPF(string cpfSolicitante)
         {
             var chamados = await _chamadoRepository.GetByCPF(cpfSolicitante);
             return (chamados);

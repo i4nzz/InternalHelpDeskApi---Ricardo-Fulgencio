@@ -2,7 +2,7 @@
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 
-namespace InternalHelpDeskApi.Application.UseCases.Chamados
+namespace InternalHelpDeskApi.Application.UseCases
 {
     public class GetChamadoByIdUseCase : IGetChamadoByIdUseCase
     {
@@ -11,7 +11,7 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
         {
             _chamadoRepository = chamadoRepository;
         }
-        public async Task<ChamadosDtos> GetById(int id)
+        public async Task<Chamados> GetById(int id)
         {
             var chamado = await _chamadoRepository.GetById(id);
             if (chamado == null)

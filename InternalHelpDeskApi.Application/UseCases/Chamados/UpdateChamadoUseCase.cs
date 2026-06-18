@@ -2,7 +2,7 @@
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 
-namespace InternalHelpDeskApi.Application.UseCases.Chamados
+namespace InternalHelpDeskApi.Application.UseCases
 {
     public class UpdateChamadoUseCase : IUpdateChamadoUseCase
     {
@@ -11,7 +11,7 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
         {
             _chamadoRepository = chamadoRepository;
         }
-        public Task UpdateChamado(ChamadosDtos chamado)
+        public Task UpdateChamado(Chamados chamado)
         {
             return _chamadoRepository.UpdateAsync(chamado);
         }

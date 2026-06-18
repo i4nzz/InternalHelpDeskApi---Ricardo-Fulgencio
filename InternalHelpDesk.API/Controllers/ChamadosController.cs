@@ -1,4 +1,5 @@
 ﻿using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Application.UseCases;
 using InternalHelpDeskApi.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -64,7 +65,7 @@ namespace InternalHelpDesk.API.Controllers
 
         [HttpPost]
         [Route("chamados-ti")]
-        public async Task<IActionResult> CriarChamado(ChamadosDtos chamado)
+        public async Task<IActionResult> CriarChamado(CriarChamadosDto chamado)
         {
             var result = await _criarChamadoUseCase.CriarChamado(chamado);
             return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
@@ -72,7 +73,7 @@ namespace InternalHelpDesk.API.Controllers
 
         [HttpPut]
         [Route("chamados-ti")]
-        public async Task<IActionResult> Update(ChamadosDtos chamado)
+        public async Task<IActionResult> Update(Chamados chamado)
         {
             await _updateChamadoUseCase.UpdateChamado(chamado);
             return NoContent();

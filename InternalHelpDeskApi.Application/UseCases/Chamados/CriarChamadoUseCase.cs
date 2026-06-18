@@ -1,8 +1,9 @@
 ﻿using InternalHelpDeskApi.Application.Interfaces.UseCases;
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
+using Mapster;
 
-namespace InternalHelpDeskApi.Application.UseCases.Chamados
+namespace InternalHelpDeskApi.Application.UseCases
 {
     public class CriarChamadoUseCase : ICriarChamadoUseCase
     {
@@ -11,9 +12,10 @@ namespace InternalHelpDeskApi.Application.UseCases.Chamados
         {
             _chamadoRepository = chamadoRepository;
         }
-        public async Task<ChamadosDtos> CriarChamado(ChamadosDtos novoChamado)
+        public async Task<Chamados> CriarChamado(CriarChamadosDto novoChamado)
         {
-            return await _chamadoRepository.AddAsync(novoChamado);
+            var chamado = novoChamado.Adapt<Chamados>();
+            return await _chamadoRepository.AddAsync(chamado);
         }
     }
 }

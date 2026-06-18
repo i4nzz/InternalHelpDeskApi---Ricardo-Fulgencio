@@ -4,7 +4,7 @@ using global::InternalHelpDeskApi.Infrastructure.Repositories;
 using InternalHelpDeskApi.Application;
 using InternalHelpDeskApi.Application.Interfaces.UseCases;
 using InternalHelpDeskApi.Application.UseCases;
-using InternalHelpDeskApi.Application.UseCases.Chamados;
+using InternalHelpDeskApi.Application.UseCases;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

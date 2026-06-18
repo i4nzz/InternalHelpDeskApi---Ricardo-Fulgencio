@@ -1,9 +1,9 @@
 ﻿using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Enums;
 
-namespace InternalHelpDeskApi.Application.UseCases.Chamados;
+namespace InternalHelpDeskApi.Application.UseCases;
 
-public class CriarChamadosDtos
+public class CriarChamadosDto
 {
     public string Titulo { get; set; } = string.Empty;
     public string Descricao { get; set; } = string.Empty;

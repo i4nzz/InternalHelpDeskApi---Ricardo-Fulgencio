@@ -9,7 +9,7 @@ namespace InternalHelpDeskApi.Infrastructure.Persistence
         {
         }
         public DbSet<Solicitante> Solicitantes { get; set; }
-        public DbSet<ChamadosDtos> Chamados { get; set; }
+        public DbSet<Chamados> Chamados { get; set; }
         public DbSet<Atendente> Atendentes { get; set; }
         public DbSet<Prioridade> Prioridades { get; set; }
         public DbSet<Categoria> Categorias { get; set; }

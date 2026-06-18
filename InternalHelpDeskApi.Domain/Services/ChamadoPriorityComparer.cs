@@ -2,9 +2,9 @@
 
 namespace InternalHelpDeskApi.Domain.Services
 {
-    public class ChamadoPriorityComparer : IComparer<ChamadosDtos>
+    public class ChamadoPriorityComparer : IComparer<Chamados>
     {
-        public int Compare(ChamadosDtos? x, ChamadosDtos? y)
+        public int Compare(Chamados? x, Chamados? y)
         {
             if (x == null && y == null) return 0;
             if (x == null) return -1;

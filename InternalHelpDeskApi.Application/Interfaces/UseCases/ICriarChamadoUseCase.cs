@@ -1,14 +1,10 @@
-﻿using InternalHelpDeskApi.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using InternalHelpDeskApi.Application.UseCases;
+using InternalHelpDeskApi.Domain.Entities;
 
 namespace InternalHelpDeskApi.Application.Interfaces.UseCases
 {
     public interface ICriarChamadoUseCase
     {
-        Task<ChamadosDtos> CriarChamado(ChamadosDtos novoChamado);
+        Task<Chamados> CriarChamado(CriarChamadosDto novoChamado);  
     }
 }

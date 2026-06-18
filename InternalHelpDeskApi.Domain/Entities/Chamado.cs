@@ -1,7 +1,7 @@
 ﻿using InternalHelpDeskApi.Domain.Enums;
 
 namespace InternalHelpDeskApi.Domain.Entities;
-public class ChamadosDtos
+public class Chamados
 {
     public int Id { get; set; }
     public string Titulo { get; set; } = string.Empty;
