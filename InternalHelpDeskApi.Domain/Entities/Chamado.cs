@@ -8,6 +8,8 @@ public class Chamados
     public string Descricao { get; set; } = string.Empty;
     public int CategoriaId { get; set; }
     public Categoria Categoria { get; set; }
+    public int? PrioridadeId { get; set; }
+    public Prioridade? Prioridade { get; set; }
     public StatusChamadoEnum Status { get; set; }
     public int? SolicitanteId { get; set; }
     public Solicitante? Solicitante { get; set; }

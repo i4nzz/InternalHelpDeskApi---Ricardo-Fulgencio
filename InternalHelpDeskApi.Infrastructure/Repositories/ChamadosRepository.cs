@@ -16,7 +16,7 @@ namespace InternalHelpDeskApi.Infrastructure
         public async Task SoftDeleteAsync(Chamados chamados)
         {
             chamados.Status = Domain.Enums.StatusChamadoEnum.Cancelado;
-            _context.Set<Chamados>().Remove(chamados);
+            _context.Set<Chamados>().Update(chamados);
             await _context.SaveChangesAsync();
         }
 

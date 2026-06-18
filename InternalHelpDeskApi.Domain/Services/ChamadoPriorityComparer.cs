@@ -10,16 +10,16 @@ namespace InternalHelpDeskApi.Domain.Services
             if (x == null) return -1;
             if (y == null) return 1;
 
-            int pesoX = (x.Categoria?.Peso ?? 0) + (x.Categoria?.Prioridade?.Peso ?? 0);
-            int pesoY = (y.Categoria?.Peso ?? 0) + (y.Categoria?.Prioridade?.Peso ?? 0);
+            int pesoX = x.Prioridade?.Peso ?? 0;
+            int pesoY = y.Prioridade?.Peso ?? 0;
 
-            int comparacaoPeso = pesoX.CompareTo(pesoY);
+            int comparacaoPeso = pesoY.CompareTo(pesoX);
             if (comparacaoPeso != 0)
             {
                 return comparacaoPeso;
             }
 
-            return y.AberturaEm.CompareTo(x.AberturaEm);
+            return x.AberturaEm.CompareTo(y.AberturaEm);
         }
     }
 }
