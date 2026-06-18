@@ -1,0 +1,27 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: internalhelpdesk-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Senha_Forte_12345"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: internalhelpdesk-api
+    depends_on:
+      - sqlserver
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=FulgencioDB;User Id=sa;Password=Senha_Forte_12345;TrustServerCertificate=True;"
+    ports:
+      - "8080:8080"
+
+volumes:
+  sqlserver_data:

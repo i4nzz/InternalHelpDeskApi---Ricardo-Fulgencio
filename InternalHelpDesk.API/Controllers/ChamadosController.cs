@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InternalHelpDesk.API.Controllers
 {
+    /// <summary>
+    /// Controller responsável pelo gerenciamento dos chamados internos de TI.
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class ChamadosController : ControllerBase
@@ -15,21 +18,20 @@ namespace InternalHelpDesk.API.Controllers
         private readonly ICriarChamadoUseCase _criarChamadoUseCase;
         private readonly IUpdateChamadoUseCase _updateChamadoUseCase;
         private readonly IObterListaDeChamadosOrdenadosUseCase _obterListaDeChamadosOrdenadosUseCase;
-        private readonly IChamadosUrgentesUseCase _ChamadosUrgentesUseCase;
+        private readonly IChamadosUrgentesUseCase _chamadosUrgentesUseCase;
         private readonly IGetChamadoByDescUseCase _getChamadoByDescUseCase;
         private readonly IGetChamadosByCPFSolicitanteUseCase _getChamadosByCPFSolicitanteUseCase;
-        public ChamadosController
-            (
+
+        public ChamadosController(
             ISoftDeleteChamadoUseCase softDeleteChamado,
             IGetChamadoByIdUseCase getChamadoByIdUseCase,
             IGetAllChamadosPagedUseCase getAllChamadosPagedUseCase,
             ICriarChamadoUseCase criarChamadoUseCase,
             IUpdateChamadoUseCase updateChamadoUseCase,
             IObterListaDeChamadosOrdenadosUseCase obterListaDeChamadosOrdenadosUseCase,
-            IChamadosUrgentesUseCase ChamadosUrgentesUseCase,
+            IChamadosUrgentesUseCase chamadosUrgentesUseCase,
             IGetChamadoByDescUseCase getChamadoByDescUseCase,
-            IGetChamadosByCPFSolicitanteUseCase getChamadosByCPFSolicitanteUseCase
-            )
+            IGetChamadosByCPFSolicitanteUseCase getChamadosByCPFSolicitanteUseCase)
         {
             _softDeleteChamado = softDeleteChamado;
             _getChamadoByIdUseCase = getChamadoByIdUseCase;
@@ -37,56 +39,83 @@ namespace InternalHelpDesk.API.Controllers
             _criarChamadoUseCase = criarChamadoUseCase;
             _updateChamadoUseCase = updateChamadoUseCase;
             _obterListaDeChamadosOrdenadosUseCase = obterListaDeChamadosOrdenadosUseCase;
-            _ChamadosUrgentesUseCase = ChamadosUrgentesUseCase;
+            _chamadosUrgentesUseCase = chamadosUrgentesUseCase;
             _getChamadoByDescUseCase = getChamadoByDescUseCase;
             _getChamadosByCPFSolicitanteUseCase = getChamadosByCPFSolicitanteUseCase;
         }
 
+        /// <summary>
+        /// Lista os chamados ativos de forma paginada, sem aplicar ordenação por prioridade.
+        /// </summary>
+        /// <param name="pageNumber">Número da página desejada.</param>
+        /// <param name="pageSize">Quantidade de registros por página.</param>
+        /// <returns>Lista paginada de chamados.</returns>
         [HttpGet("chamados-ti")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> GetAllDisorderedPaged([FromQuery] int pageNumber, [FromQuery] int pageSize)
+        public async Task<IActionResult> GetAllDisorderedPaged(
+            [FromQuery] int pageNumber = 1,
+            [FromQuery] int pageSize = 10)
         {
             var result = await _getAllChamadosUseCase.GetAllDisorderedPaged(pageNumber, pageSize);
             return Ok(result);
         }
-        [HttpGet]
-        [Route("chamados-ti/")]
+
+        /// <summary>
+        /// Consulta um chamado específico pelo seu identificador.
+        /// </summary>
+        /// <param name="id">Identificador do chamado.</param>
+        /// <returns>Dados do chamado encontrado.</returns>
+        [HttpGet("chamados-ti/{id:int}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> GetById([FromQuery] int id)
+        public async Task<IActionResult> GetById([FromRoute] int id)
         {
             var result = await _getChamadoByIdUseCase.GetById(id);
             return Ok(result);
         }
 
-        [HttpPost]
-        [Route("chamados-ti")]
+        /// <summary>
+        /// Cadastra um novo chamado interno de TI.
+        /// </summary>
+        /// <param name="chamado">Dados do chamado que será cadastrado.</param>
+        /// <returns>Chamado criado.</returns>
+        [HttpPost("chamados-ti")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> CriarChamado(ChamadosDto chamado)
+        public async Task<IActionResult> CriarChamado([FromBody] ChamadosDto chamado)
         {
             var result = await _criarChamadoUseCase.CriarChamado(chamado);
             return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
         }
 
-        [HttpPut]
-        [Route("chamados-ti/{id}")]
+        /// <summary>
+        /// Atualiza os dados de um chamado existente.
+        /// </summary>
+        /// <param name="id">Identificador do chamado que será atualizado.</param>
+        /// <param name="chamado">Novos dados do chamado.</param>
+        /// <returns>Resposta sem conteúdo quando a atualização é concluída.</returns>
+        [HttpPut("chamados-ti/{id:int}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Update([FromRoute] int id, ChamadosDto chamado)
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] ChamadosDto chamado)
         {
             await _updateChamadoUseCase.UpdateChamado(id, chamado);
             return NoContent();
         }
-        [HttpDelete]
-        [Route("chamados-ti")]
+
+        /// <summary>
+        /// Realiza a exclusão lógica de um chamado.
+        /// </summary>
+        /// <param name="id">Identificador do chamado que será excluído logicamente.</param>
+        /// <returns>Resposta sem conteúdo quando a exclusão lógica é concluída.</returns>
+        [HttpDelete("chamados-ti/{id:int}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -97,8 +126,13 @@ namespace InternalHelpDesk.API.Controllers
             return NoContent();
         }
 
-        [HttpGet]
-        [Route("chamados-ti/buscar")] 
+        /// <summary>
+        /// Busca chamados por CPF do solicitante ou por descrição.
+        /// </summary>
+        /// <param name="cpf">CPF do solicitante.</param>
+        /// <param name="descricao">Texto da descrição do chamado.</param>
+        /// <returns>Lista de chamados encontrados conforme o filtro informado.</returns>
+        [HttpGet("chamados-ti/buscar")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -119,29 +153,40 @@ namespace InternalHelpDesk.API.Controllers
             return BadRequest("Informe o parâmetro 'cpf' ou 'descricao' para realizar a busca.");
         }
 
-        [HttpPost]
-        [Route("chamados-ti/proximo/atender")]
+        /// <summary>
+        /// Distribui o próximo chamado prioritário para atendimento.
+        /// </summary>
+        /// <param name="id">Identificador do atendente que receberá o chamado.</param>
+        /// <returns>Chamado distribuído para atendimento.</returns>
+        [HttpPost("chamados-ti/proximo/atender")]
         [ProducesResponseType(typeof(Chamados), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> DistribuirChamado([FromQuery] int id)
         {
-            var result = await _ChamadosUrgentesUseCase.DistribuirProximoChamado(id);
+            var result = await _chamadosUrgentesUseCase.DistribuirProximoChamado(id);
             return Ok(result);
         }
 
-
+        /// <summary>
+        /// Consulta o próximo chamado mais urgente da fila de prioridade.
+        /// </summary>
+        /// <returns>Chamado mais urgente disponível.</returns>
         [HttpGet("chamados-ti/proximo")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetChamadoUrgente()
         {
-            var result = await _ChamadosUrgentesUseCase.BuscarChamadoUrgente();
+            var result = await _chamadosUrgentesUseCase.BuscarChamadoUrgente();
             return Ok(result);
         }
 
+        /// <summary>
+        /// Lista todos os chamados ordenados pela regra de prioridade.
+        /// </summary>
+        /// <returns>Lista de chamados ordenados pela prioridade calculada.</returns>
         [HttpGet("chamados-ti/ordenados")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -151,6 +196,5 @@ namespace InternalHelpDesk.API.Controllers
             var result = await _obterListaDeChamadosOrdenadosUseCase.ObterListaChamadosOrdenados();
             return Ok(result);
         }
-
     }
 }
