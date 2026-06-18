@@ -45,6 +45,23 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Prioridades",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CategoriaId = table.Column<int>(type: "int", nullable: false),
+                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Peso = table.Column<int>(type: "int", nullable: false),
+                    CriadoEm = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    AtualizadoEm = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Prioridades", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Solicitantes",
                 columns: table => new
                 {
@@ -63,29 +80,6 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Prioridades",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CategoriaId = table.Column<int>(type: "int", nullable: false),
-                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Peso = table.Column<int>(type: "int", nullable: false),
-                    CriadoEm = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    AtualizadoEm = table.Column<DateTime>(type: "datetime2", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Prioridades", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Prioridades_Categorias_CategoriaId",
-                        column: x => x.CategoriaId,
-                        principalTable: "Categorias",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Chamados",
                 columns: table => new
                 {
@@ -94,10 +88,13 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                     Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CategoriaId = table.Column<int>(type: "int", nullable: false),
+                    PrioridadeId = table.Column<int>(type: "int", nullable: true),
                     Status = table.Column<int>(type: "int", nullable: false),
                     SolicitanteId = table.Column<int>(type: "int", nullable: true),
                     AtendenteId = table.Column<int>(type: "int", nullable: true),
-                    AberturaEm = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    CriadoEm = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    AtualizadoEm = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataExclusao = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -113,6 +110,11 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                         principalTable: "Categorias",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Chamados_Prioridades_PrioridadeId",
+                        column: x => x.PrioridadeId,
+                        principalTable: "Prioridades",
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Chamados_Solicitantes_SolicitanteId",
                         column: x => x.SolicitanteId,
@@ -131,15 +133,14 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                 column: "CategoriaId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Chamados_PrioridadeId",
+                table: "Chamados",
+                column: "PrioridadeId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Chamados_SolicitanteId",
                 table: "Chamados",
                 column: "SolicitanteId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Prioridades_CategoriaId",
-                table: "Prioridades",
-                column: "CategoriaId",
-                unique: true);
         }
 
         /// <inheritdoc />
@@ -149,16 +150,16 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                 name: "Chamados");
 
             migrationBuilder.DropTable(
-                name: "Prioridades");
-
-            migrationBuilder.DropTable(
                 name: "Atendentes");
 
             migrationBuilder.DropTable(
-                name: "Solicitantes");
+                name: "Categorias");
 
             migrationBuilder.DropTable(
-                name: "Categorias");
+                name: "Prioridades");
+
+            migrationBuilder.DropTable(
+                name: "Solicitantes");
         }
     }
 }

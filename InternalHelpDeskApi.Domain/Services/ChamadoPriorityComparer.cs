@@ -19,7 +19,7 @@ namespace InternalHelpDeskApi.Domain.Services
                 return -comparacaoPeso;
             }
 
-            return x.AberturaEm.CompareTo(y.AberturaEm);
+            return x.CriadoEm.CompareTo(y.CriadoEm);
         }
     }
 }

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InternalHelpDeskApi.Infrastructure.Migrations
 {
     [DbContext(typeof(HelpDeskContext))]
-    partial class DataBaseModelSnapshot : ModelSnapshot
+    partial class HelpDeskContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -86,14 +86,20 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("AberturaEm")
-                        .HasColumnType("datetime2");
-
                     b.Property<int?>("AtendenteId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("AtualizadoEm")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("CategoriaId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataExclusao")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
@@ -150,9 +156,6 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoriaId")
-                        .IsUnique();
 
                     b.ToTable("Prioridades");
                 });
@@ -218,21 +221,6 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                     b.Navigation("Prioridade");
 
                     b.Navigation("Solicitante");
-                });
-
-            modelBuilder.Entity("InternalHelpDeskApi.Domain.Entities.Prioridade", b =>
-                {
-                    b.HasOne("InternalHelpDeskApi.Domain.Entities.Categoria", null)
-                        .WithOne("Prioridade")
-                        .HasForeignKey("InternalHelpDeskApi.Domain.Entities.Prioridade", "CategoriaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("InternalHelpDeskApi.Domain.Entities.Categoria", b =>
-                {
-                    b.Navigation("Prioridade")
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
