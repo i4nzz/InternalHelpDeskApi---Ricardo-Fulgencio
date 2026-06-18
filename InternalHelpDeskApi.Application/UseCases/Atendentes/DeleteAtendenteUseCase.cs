@@ -20,7 +20,11 @@ namespace InternalHelpDeskApi.Application.UseCases.Atendentes
                 throw new Exception($"Atendente com ID {id} não encontrado.");
             }
 
-            throw new NotImplementedException("Deletar atendente requer implementação adicional.");
+            atendente.Ativo = false;
+            atendente.DataExclusao = DateTime.UtcNow;
+            atendente.AtualizadoEm = DateTime.UtcNow;
+
+            await _atendenteRepository.UpdateAsync(atendente);  
         }
     }
 }

@@ -23,7 +23,9 @@ namespace InternalHelpDeskApi.Application.UseCases.Solicitantes
 
             solicitante.AtualizadoEm = DateTime.UtcNow;
             solicitante.DataExclusao = DateTime.UtcNow;
-            solicitante.Status = Domain.Enums.StatusEnum.Cancelado;
+            solicitante.Ativo = false;
+
+            await _solicitanteRepository.UpdateAsync(solicitante);
         }
     }
 }

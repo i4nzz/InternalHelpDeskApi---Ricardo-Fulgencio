@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InternalHelpDeskApi.Infrastructure.Migrations
 {
     [DbContext(typeof(HelpDeskContext))]
-    [Migration("20260618123850_InitialCreate")]
+    [Migration("20260618173533_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -42,6 +42,9 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                     b.Property<DateTime>("CriadoEm")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("DataExclusao")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -63,10 +66,16 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime?>("AtualizadoEm")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataExclusao")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Nome")
@@ -142,6 +151,9 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime?>("AtualizadoEm")
                         .HasColumnType("datetime2");
 
@@ -149,6 +161,9 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataExclusao")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
@@ -182,6 +197,9 @@ namespace InternalHelpDeskApi.Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataExclusao")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")

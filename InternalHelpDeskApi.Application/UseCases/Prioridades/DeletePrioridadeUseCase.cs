@@ -22,7 +22,8 @@ namespace InternalHelpDeskApi.Application.UseCases.Prioridades
 
             prioridade.AtualizadoEm = DateTime.UtcNow;
             prioridade.DataExclusao = DateTime.UtcNow;
-            prioridade.Status = Domain.Enums.StatusEnum.Cancelado;
+            prioridade.Ativo = false;
+            await _prioridadeRepository.UpdateAsync(prioridade);
         }
     }
 }

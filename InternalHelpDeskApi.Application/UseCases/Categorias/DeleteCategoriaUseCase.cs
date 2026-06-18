@@ -23,7 +23,9 @@ namespace InternalHelpDeskApi.Application.UseCases.Categorias
 
             categoria.AtualizadoEm = DateTime.UtcNow;
             categoria.DataExclusao = DateTime.UtcNow;
-            categoria.Status = Domain.Enums.StatusEnum.Cancelado;
+            categoria.Ativo = false;
+
+            await _categoriaRepository.UpdateAsync(categoria);
         }
     }
 }

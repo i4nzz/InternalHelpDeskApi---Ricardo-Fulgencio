@@ -10,6 +10,7 @@ namespace InternalHelpDeskApi.Domain.Entities
         public DateTime CriadoEm { get; set; }
         public DateTime? AtualizadoEm { get; set; }
         public DateTime? DataExclusao { get; set; }
-        public StatusEnum Status { get; set; }
+        public bool Ativo { get; set; } = true;
+
     }
 }
