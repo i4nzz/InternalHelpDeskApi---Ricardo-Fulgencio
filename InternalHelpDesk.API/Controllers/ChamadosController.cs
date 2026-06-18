@@ -63,7 +63,6 @@ namespace InternalHelpDesk.API.Controllers
             return Ok(result);
         }
 
-
         [HttpPost]
         [Route("chamados-ti")]
         [ProducesResponseType(StatusCodes.Status201Created)]

@@ -15,6 +15,9 @@ public class Chamados
     public Solicitante? Solicitante { get; set; }
     public int? AtendenteId { get; set; }
     public Atendente? Atendente { get; set; } = null;
-    public DateTime AberturaEm { get; set; }
+    public DateTime CriadoEm { get; set; }
+    public DateTime AtualizadoEm { get; set; }
+    public DateTime DataExclusao { get; set; }
+
 }
 
