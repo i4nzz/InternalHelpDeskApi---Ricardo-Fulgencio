@@ -10,9 +10,9 @@ namespace InternalHelpDeskApi.Tests.Helpers
             int id = 1,
             string titulo = "Servidor principal caiu",
             string descricao = "Problema crítico afetando toda a empresa.",
-            int categoriaId = 1,
+            int CategoriaId = 1,
             int prioridadeId = 1,
-            int solicitanteId = 1,
+            int SolicitanteId = 1,
             StatusEnum status = StatusEnum.Aberto)
         {
             return new Chamados
@@ -20,10 +20,10 @@ namespace InternalHelpDeskApi.Tests.Helpers
                 Id = id,
                 Titulo = titulo,
                 Descricao = descricao,
-                CategoriaId = categoriaId,
+                CategoriaId = CategoriaId,
                 Categoria = new Categoria
                 {
-                    Id = categoriaId,
+                    Id = CategoriaId,
                     Nome = "Infraestrutura",
                     Peso = 3
                 },
@@ -34,7 +34,7 @@ namespace InternalHelpDeskApi.Tests.Helpers
                     Descricao = "Alta",
                     Peso = 10
                 },
-                SolicitanteId = solicitanteId,
+                SolicitanteId = SolicitanteId,
                 Status = status,
                 CriadoEm = DateTime.Now,
                 AtualizadoEm = DateTime.Now
@@ -44,18 +44,18 @@ namespace InternalHelpDeskApi.Tests.Helpers
         public static ChamadosDto CriarChamadoDto(
             string titulo = "Servidor principal caiu",
             string descricao = "Problema crítico afetando toda a empresa.",
-            int categoriaId = 1,
+            int CategoriaId = 1,
             int prioridadeId = 1,
-            int solicitanteId = 1,
+            int SolicitanteId = 1,
             StatusEnum status = StatusEnum.Aberto)
         {
             return new ChamadosDto
             {
                 Titulo = titulo,
                 Descricao = descricao,
-                CategoriaID = categoriaId,
+                CategoriaId = CategoriaId,
                 PrioridadeId = prioridadeId,
-                SolicitanteID = solicitanteId,
+                SolicitanteId = SolicitanteId,
                 Status = status
             };
         }

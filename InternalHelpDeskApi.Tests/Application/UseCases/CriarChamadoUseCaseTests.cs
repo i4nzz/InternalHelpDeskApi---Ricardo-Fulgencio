@@ -17,9 +17,9 @@ namespace InternalHelpDeskApi.Tests.Application.UseCases
             {
                 Titulo = "Servidor principal caiu",
                 Descricao = "Problema crítico afetando toda a empresa.",
-                CategoriaID = 1,
+                CategoriaId = 1,
                 PrioridadeId = 1,
-                SolicitanteID = 1,
+                SolicitanteId = 1,
                 Status = StatusEnum.Aberto
             };
 

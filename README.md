@@ -220,10 +220,10 @@ Exemplo de corpo:
 {
   "titulo": "Servidor principal caiu",
   "descricao": "Problema crítico afetando toda a empresa.",
-  "categoriaID": 1,
+  "CategoriaId": 1,
   "prioridadeId": 1,
   "status": 0,
-  "solicitanteID": 1,
+  "SolicitanteId": 1,
   "atendente": null
 }
 ```
@@ -1073,10 +1073,10 @@ Exemplo para criação de chamado:
 {
   "titulo": "Servidor principal caiu",
   "descricao": "Problema crítico afetando toda a empresa.",
-  "categoriaID": 1,
+  "CategoriaId": 1,
   "prioridadeId": 1,
   "status": 1,
-  "solicitanteID": 1,
+  "SolicitanteId": 1,
   "atendente": null
 }
 ```
@@ -1086,10 +1086,10 @@ Campos:
 ```text
 titulo        → Título do chamado. Obrigatório.
 descricao     → Descrição detalhada do chamado. Obrigatório e com no mínimo 10 caracteres.
-categoriaID   → ID da categoria cadastrada no banco.
+CategoriaId   → ID da categoria cadastrada no banco.
 prioridadeId  → ID da prioridade cadastrada no banco.
 status        → Status do chamado conforme enum da aplicação.
-solicitanteID → ID do solicitante cadastrado no banco.
+SolicitanteId → ID do solicitante cadastrado no banco.
 atendente     → Pode ser enviado como null na criação inicial.
 ```
 
@@ -1113,7 +1113,7 @@ peso → Peso usado na regra de prioridade. Obrigatório.
 
 ```json
 {
-  "categoriaId": 1,
+  "CategoriaId": 1,
   "descricao": "Alta",
   "peso": 10
 }
@@ -1122,7 +1122,7 @@ peso → Peso usado na regra de prioridade. Obrigatório.
 Campos:
 
 ```text
-categoriaId → ID da categoria relacionada. Obrigatório.
+CategoriaId → ID da categoria relacionada. Obrigatório.
 descricao   → Descrição da prioridade. Obrigatório.
 peso        → Peso usado no cálculo de prioridade. Obrigatório.
 ```
@@ -1187,10 +1187,10 @@ Exemplo de criação de chamado:
 {
   "titulo": "Servidor principal caiu",
   "descricao": "Problema crítico afetando toda a empresa.",
-  "categoriaID": 1,
+  "CategoriaId": 1,
   "prioridadeId": 1,
   "status": 1,
-  "solicitanteID": 1,
+  "SolicitanteId": 1,
   "atendente": null
 }
 ```
@@ -1220,10 +1220,10 @@ Body:
 {
   "titulo": "Servidor principal caiu",
   "descricao": "Problema crítico afetando toda a empresa.",
-  "categoriaID": 1,
+  "CategoriaId": 1,
   "prioridadeId": 1,
   "status": 1,
-  "solicitanteID": 1,
+  "SolicitanteId": 1,
   "atendente": null
 }
 ```
@@ -1238,10 +1238,10 @@ curl -X POST http://localhost:8080/api/Chamados/chamados-ti \
   -d '{
     "titulo": "Servidor principal caiu",
     "descricao": "Problema crítico afetando toda a empresa.",
-    "categoriaID": 1,
+    "CategoriaId": 1,
     "prioridadeId": 1,
     "status": 1,
-    "solicitanteID": 1,
+    "SolicitanteId": 1,
     "atendente": null
   }'
 ```
@@ -1266,10 +1266,10 @@ curl -X PUT http://localhost:8080/api/Chamados/chamados-ti/1 \
   -d '{
     "titulo": "Servidor normalizado",
     "descricao": "Chamado atualizado após correção do problema.",
-    "categoriaID": 1,
+    "CategoriaId": 1,
     "prioridadeId": 1,
     "status": 2,
-    "solicitanteID": 1,
+    "SolicitanteId": 1,
     "atendente": null
   }'
 ```
@@ -1293,10 +1293,10 @@ Content-Type: application/json
 {
   "titulo": "Servidor principal caiu",
   "descricao": "Problema crítico afetando toda a empresa.",
-  "categoriaID": 1,
+  "CategoriaId": 1,
   "prioridadeId": 1,
   "status": 1,
-  "solicitanteID": 1,
+  "SolicitanteId": 1,
   "atendente": null
 }
 
@@ -1316,10 +1316,10 @@ Content-Type: application/json
 {
   "titulo": "Servidor normalizado",
   "descricao": "Chamado atualizado após correção do problema.",
-  "categoriaID": 1,
+  "CategoriaId": 1,
   "prioridadeId": 1,
   "status": 2,
-  "solicitanteID": 1,
+  "SolicitanteId": 1,
   "atendente": null
 }
 

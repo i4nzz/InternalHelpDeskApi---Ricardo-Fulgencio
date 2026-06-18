@@ -19,9 +19,9 @@ namespace InternalHelpDeskApi.Tests.Application.UseCases
             {
                 Titulo = "Servidor principal normalizado",
                 Descricao = "Chamado atualizado após correção do problema.",
-                CategoriaID = 2,
+                CategoriaId = 2,
                 PrioridadeId = 3,
-                SolicitanteID = 1,
+                SolicitanteId = 1,
                 Status = StatusEnum.EmAtendimento
             };
 

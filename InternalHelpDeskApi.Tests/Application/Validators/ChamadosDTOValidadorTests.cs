@@ -75,11 +75,11 @@ namespace InternalHelpDeskApi.Tests.Application.Validators
         public void Validate_DeveRetornarErro_QuandoCategoriaForInvalida()
         {
             var dto = CriarDtoValido();
-            dto.CategoriaID = 0;
+            dto.CategoriaId = 0;
 
             var resultado = _validator.TestValidate(dto);
 
-            resultado.ShouldHaveValidationErrorFor(x => x.CategoriaID)
+            resultado.ShouldHaveValidationErrorFor(x => x.CategoriaId)
                 .WithErrorMessage("Informe uma categoria válida.");
         }
 
@@ -99,11 +99,11 @@ namespace InternalHelpDeskApi.Tests.Application.Validators
         public void Validate_DeveRetornarErro_QuandoSolicitanteForInvalido()
         {
             var dto = CriarDtoValido();
-            dto.SolicitanteID = 0;
+            dto.SolicitanteId = 0;
 
             var resultado = _validator.TestValidate(dto);
 
-            resultado.ShouldHaveValidationErrorFor(x => x.SolicitanteID)
+            resultado.ShouldHaveValidationErrorFor(x => x.SolicitanteId)
                 .WithErrorMessage("Informe um solicitante válido.");
         }
 
@@ -125,9 +125,9 @@ namespace InternalHelpDeskApi.Tests.Application.Validators
             {
                 Titulo = "Servidor principal caiu",
                 Descricao = "Problema crítico afetando toda a empresa.",
-                CategoriaID = 1,
+                CategoriaId = 1,
                 PrioridadeId = 1,
-                SolicitanteID = 1,
+                SolicitanteId = 1,
                 Status = StatusEnum.Aberto
             };
         }

@@ -14,13 +14,13 @@ public class ChamadosDtoValidator : AbstractValidator<ChamadosDto>
             .NotEmpty().WithMessage("A descrição do chamado é obrigatória.")
             .MinimumLength(10).WithMessage("A descrição deve ter pelo menos 10 caracteres.");
 
-        RuleFor(x => x.CategoriaID)
+        RuleFor(x => x.CategoriaId)
             .GreaterThan(0).WithMessage("Informe uma categoria válida.");
 
         RuleFor(x => x.PrioridadeId)
             .GreaterThan(0).WithMessage("Informe uma prioridade válida.");
 
-        RuleFor(x => x.SolicitanteID)
+        RuleFor(x => x.SolicitanteId)
             .GreaterThan(0).WithMessage("Informe um solicitante válido.");
 
         RuleFor(x => x.Status)
