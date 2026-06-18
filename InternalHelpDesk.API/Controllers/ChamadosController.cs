@@ -87,7 +87,7 @@ namespace InternalHelpDesk.API.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> CriarChamado([FromBody] ChamadosDto chamado)
+        public async Task<IActionResult> CriarChamado([FromBody] ChamadosDto chamado)/
         {
             var result = await _criarChamadoUseCase.CriarChamado(chamado);
             return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);

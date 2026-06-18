@@ -7,9 +7,9 @@ public class ChamadosDto
 {
     public string Titulo { get; set; } = string.Empty;
     public string Descricao { get; set; } = string.Empty;
-    public int CategoriaID { get; set; }
+    public int CategoriaId { get; set; }
     public int PrioridadeId { get; set; }
     public StatusEnum Status { get; set; } = StatusEnum.Aberto;
-    public int SolicitanteID { get; set; }
-    public Atendente? Atendente { get; set; } = null;
+    public int SolicitanteId { get; set; }
+    public int AtendenteId { get; set; } = null;
 }
