@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj": {}
+    "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj": {}
   },
   "projects": {
-    "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj": {
+    "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
+        "projectUniqueName": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
         "projectName": "InternalHelpDesk.API",
-        "projectPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
-        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\obj\\",
+        "projectPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\InternalHelpDesk.API.csproj",
+        "packagesPath": "C:\\Users\\Ian\\.nuget\\packages\\",
+        "outputPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDesk.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj": {
-                "projectPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj"
+              "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj": {
+                "projectPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj"
               },
-              "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj": {
-                "projectPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj"
+              "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj": {
+                "projectPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj"
               }
             }
           }
@@ -52,7 +51,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -82,24 +81,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj": {
+    "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj",
+        "projectUniqueName": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj",
         "projectName": "InternalHelpDeskApi.Application",
-        "projectPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj",
-        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\obj\\",
+        "projectPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj",
+        "packagesPath": "C:\\Users\\Ian\\.nuget\\packages\\",
+        "outputPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -108,15 +107,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj": {
-                "projectPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj"
+              "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj": {
+                "projectPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj"
               }
             }
           }
@@ -131,7 +129,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -158,24 +156,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj": {
+    "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj",
+        "projectUniqueName": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj",
         "projectName": "InternalHelpDeskApi.Domain",
-        "projectPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj",
-        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\obj\\",
+        "projectPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\Ian\\.nuget\\packages\\",
+        "outputPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -184,7 +182,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -203,7 +200,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -224,24 +221,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj": {
+    "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
+        "projectUniqueName": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
         "projectName": "InternalHelpDeskApi.Infrastructure",
-        "projectPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\obj\\",
+        "projectPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\InternalHelpDeskApi.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Ian\\.nuget\\packages\\",
+        "outputPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -250,18 +247,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj": {
-                "projectPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj"
+              "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj": {
+                "projectPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Application\\InternalHelpDeskApi.Application.csproj"
               },
-              "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj": {
-                "projectPath": "F:\\Code\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj"
+              "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj": {
+                "projectPath": "F:\\InternalHelpDeskApi---Ricardo-Fulgencio\\InternalHelpDeskApi.Domain\\InternalHelpDeskApi.Domain.csproj"
               }
             }
           }
@@ -276,7 +272,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -327,7 +323,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

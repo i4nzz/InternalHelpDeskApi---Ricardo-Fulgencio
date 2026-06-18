@@ -8,7 +8,7 @@ namespace InternalHelpDeskApi.Infrastructure
     public class ChamadosRepository : RepositoryBase<Chamados>, IChamadoRepository
     {
         private readonly DataBase _context;
-        public ChamadosRepository(DataBase context) : base(context) 
+        public ChamadosRepository(DataBase context) : base(context)
         {
             _context = context;
         }
@@ -45,9 +45,10 @@ namespace InternalHelpDeskApi.Infrastructure
         public async Task<List<Chamados>> GetAllOpen()
         {
             return await _context.Set<Chamados>()
+                .Include(c => c.Prioridade)
                 .Include(c => c.Categoria)
-                .ThenInclude(cat => cat.Prioridade)
                 .Where(c => c.Status == Domain.Enums.StatusChamadoEnum.Aberto)
+                .AsSplitQuery()
                 .ToListAsync();
         }
     }
