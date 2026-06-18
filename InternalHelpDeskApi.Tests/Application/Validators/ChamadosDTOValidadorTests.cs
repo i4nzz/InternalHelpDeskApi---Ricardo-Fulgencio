@@ -111,7 +111,7 @@ namespace InternalHelpDeskApi.Tests.Application.Validators
         public void Validate_DeveRetornarErro_QuandoStatusForInvalido()
         {
             var dto = CriarDtoValido();
-            dto.Status = (StatusChamadoEnum)999;
+            dto.Status = (StatusEnum)999;
 
             var resultado = _validator.TestValidate(dto);
 
@@ -128,7 +128,7 @@ namespace InternalHelpDeskApi.Tests.Application.Validators
                 CategoriaID = 1,
                 PrioridadeId = 1,
                 SolicitanteID = 1,
-                Status = StatusChamadoEnum.Aberto
+                Status = StatusEnum.Aberto
             };
         }
     }

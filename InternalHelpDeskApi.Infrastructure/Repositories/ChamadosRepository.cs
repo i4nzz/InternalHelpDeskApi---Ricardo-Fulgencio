@@ -15,8 +15,9 @@ namespace InternalHelpDeskApi.Infrastructure
 
         public async Task SoftDeleteAsync(Chamados chamados)
         {
-            chamados.Status = Domain.Enums.StatusChamadoEnum.Cancelado;
+            chamados.Status = Domain.Enums.StatusEnum.Cancelado;
             chamados.DataExclusao = DateTime.UtcNow;
+            chamados.AtualizadoEm = DateTime.UtcNow;
             _context.Set<Chamados>().Update(chamados);
             await _context.SaveChangesAsync();
         }
@@ -48,7 +49,7 @@ namespace InternalHelpDeskApi.Infrastructure
             return await _context.Set<Chamados>()
                 .Include(c => c.Prioridade)
                 .Include(c => c.Categoria)
-                .Where(c => c.Status == Domain.Enums.StatusChamadoEnum.Aberto)
+                .Where(c => c.Status == Domain.Enums.StatusEnum.Aberto)
                 .AsSplitQuery()
                 .ToListAsync();
         }

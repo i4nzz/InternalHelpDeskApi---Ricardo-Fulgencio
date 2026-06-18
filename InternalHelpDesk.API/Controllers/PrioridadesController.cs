@@ -7,7 +7,7 @@ namespace InternalHelpDesk.API.Controllers
     /// <summary>
     /// Controller responsável pelo gerenciamento de prioridades de chamados.
     /// </summary>
-    [Route("api/[controller]")]
+    [Route("api/chamado-ti/prioridades")]
     [ApiController]
     public class PrioridadesController : ControllerBase
     {

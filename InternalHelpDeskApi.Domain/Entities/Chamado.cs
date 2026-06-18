@@ -10,7 +10,7 @@ public class Chamados
     public Categoria Categoria { get; set; }
     public int? PrioridadeId { get; set; }
     public Prioridade? Prioridade { get; set; }
-    public StatusChamadoEnum Status { get; set; }
+    public StatusEnum Status { get; set; }
     public int? SolicitanteId { get; set; }
     public Solicitante? Solicitante { get; set; }
     public int? AtendenteId { get; set; }

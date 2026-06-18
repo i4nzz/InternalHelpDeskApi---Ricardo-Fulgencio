@@ -1,4 +1,5 @@
 using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 
 namespace InternalHelpDeskApi.Application.UseCases.Solicitantes
@@ -20,8 +21,9 @@ namespace InternalHelpDeskApi.Application.UseCases.Solicitantes
                 throw new Exception($"Solicitante com ID {id} não encontrado.");
             }
 
-            // Implementar soft delete ou hard delete conforme necessário
-            throw new NotImplementedException("Deletar solicitante requer implementação adicional.");
+            solicitante.AtualizadoEm = DateTime.UtcNow;
+            solicitante.DataExclusao = DateTime.UtcNow;
+            solicitante.Status = Domain.Enums.StatusEnum.Cancelado;
         }
     }
 }

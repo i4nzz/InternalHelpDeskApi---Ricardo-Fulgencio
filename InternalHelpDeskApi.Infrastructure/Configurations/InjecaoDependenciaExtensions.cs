@@ -40,28 +40,24 @@ namespace InternalHelpDeskApi.Infrastructure.Configurations
             services.AddScoped<IGetChamadosByCPFSolicitanteUseCase, GetChamadosByCPFSolicitanteUseCase>();
             services.AddScoped<IObterListaDeChamadosOrdenadosUseCase, ObterListaDeChamadosOrdenadosUseCase>();
 
-            // Categoria UseCases
             services.AddScoped<IGetCategoriaByIdUseCase, GetCategoriaByIdUseCase>();
             services.AddScoped<IGetAllCategoriasPagedUseCase, GetAllCategoriasPagedUseCase>();
             services.AddScoped<ICriarCategoriaUseCase, CriarCategoriaUseCase>();
             services.AddScoped<IUpdateCategoriaUseCase, UpdateCategoriaUseCase>();
             services.AddScoped<IDeleteCategoriaUseCase, DeleteCategoriaUseCase>();
 
-            // Prioridade UseCases
             services.AddScoped<IGetPrioridadeByIdUseCase, GetPrioridadeByIdUseCase>();
             services.AddScoped<IGetAllPrioridadesPagedUseCase, GetAllPrioridadesPagedUseCase>();
             services.AddScoped<ICriarPrioridadeUseCase, CriarPrioridadeUseCase>();
             services.AddScoped<IUpdatePrioridadeUseCase, UpdatePrioridadeUseCase>();
             services.AddScoped<IDeletePrioridadeUseCase, DeletePrioridadeUseCase>();
 
-            // Atendente UseCases
             services.AddScoped<IGetAtendenteByIdUseCase, GetAtendenteByIdUseCase>();
             services.AddScoped<IGetAllAtendentesPagedUseCase, GetAllAtendentesPagedUseCase>();
             services.AddScoped<ICriarAtendenteUseCase, CriarAtendenteUseCase>();
             services.AddScoped<IUpdateAtendenteUseCase, UpdateAtendenteUseCase>();
             services.AddScoped<IDeleteAtendenteUseCase, DeleteAtendenteUseCase>();
 
-            // Solicitante UseCases
             services.AddScoped<IGetSolicitanteByIdUseCase, GetSolicitanteByIdUseCase>();
             services.AddScoped<IGetAllSolicitantesPagedUseCase, GetAllSolicitantesPagedUseCase>();
             services.AddScoped<ICriarSolicitanteUseCase, CriarSolicitanteUseCase>();

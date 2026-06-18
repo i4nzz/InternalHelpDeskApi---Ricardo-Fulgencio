@@ -1,4 +1,5 @@
 using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 
 namespace InternalHelpDeskApi.Application.UseCases.Categorias
@@ -20,9 +21,9 @@ namespace InternalHelpDeskApi.Application.UseCases.Categorias
                 throw new Exception($"Categoria com ID {id} não encontrada.");
             }
 
-            // Implementar soft delete ou hard delete conforme necessário
-            // Por enquanto, vamos remover a entidade
-            throw new NotImplementedException("Deletar categoria requer implementação adicional.");
+            categoria.AtualizadoEm = DateTime.UtcNow;
+            categoria.DataExclusao = DateTime.UtcNow;
+            categoria.Status = Domain.Enums.StatusEnum.Cancelado;
         }
     }
 }

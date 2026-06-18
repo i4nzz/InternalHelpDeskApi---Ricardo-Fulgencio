@@ -20,7 +20,6 @@ namespace InternalHelpDeskApi.Application.UseCases.Atendentes
                 throw new Exception($"Atendente com ID {id} não encontrado.");
             }
 
-            // Implementar soft delete ou hard delete conforme necessário
             throw new NotImplementedException("Deletar atendente requer implementação adicional.");
         }
     }

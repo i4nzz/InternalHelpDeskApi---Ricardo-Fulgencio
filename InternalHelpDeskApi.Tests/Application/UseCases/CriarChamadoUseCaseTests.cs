@@ -20,7 +20,7 @@ namespace InternalHelpDeskApi.Tests.Application.UseCases
                 CategoriaID = 1,
                 PrioridadeId = 1,
                 SolicitanteID = 1,
-                Status = StatusChamadoEnum.Aberto
+                Status = StatusEnum.Aberto
             };
 
             repositoryMock

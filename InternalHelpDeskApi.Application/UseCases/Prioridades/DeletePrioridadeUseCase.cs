@@ -20,8 +20,9 @@ namespace InternalHelpDeskApi.Application.UseCases.Prioridades
                 throw new Exception($"Prioridade com ID {id} não encontrada.");
             }
 
-            // Implementar soft delete ou hard delete conforme necessário
-            throw new NotImplementedException("Deletar prioridade requer implementação adicional.");
+            prioridade.AtualizadoEm = DateTime.UtcNow;
+            prioridade.DataExclusao = DateTime.UtcNow;
+            prioridade.Status = Domain.Enums.StatusEnum.Cancelado;
         }
     }
 }

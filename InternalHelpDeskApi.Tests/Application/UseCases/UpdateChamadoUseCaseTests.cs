@@ -22,7 +22,7 @@ namespace InternalHelpDeskApi.Tests.Application.UseCases
                 CategoriaID = 2,
                 PrioridadeId = 3,
                 SolicitanteID = 1,
-                Status = StatusChamadoEnum.EmAtendimento
+                Status = StatusEnum.EmAtendimento
             };
 
             repositoryMock

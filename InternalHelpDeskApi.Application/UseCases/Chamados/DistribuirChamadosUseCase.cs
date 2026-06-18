@@ -25,7 +25,7 @@ namespace InternalHelpDeskApi.Application.UseCases
             if (chamadoUrgente != null)
             {
                 chamadoUrgente.Atendente = atendente;
-                chamadoUrgente.Status = Domain.Enums.StatusChamadoEnum.EmAtendimento;
+                chamadoUrgente.Status = Domain.Enums.StatusEnum.EmAtendimento;
                 await _chamadoRepository.UpdateAsync(chamadoUrgente);
             }
             return chamadoUrgente;

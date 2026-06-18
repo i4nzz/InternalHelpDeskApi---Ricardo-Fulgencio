@@ -7,7 +7,7 @@ namespace InternalHelpDesk.API.Controllers
     /// <summary>
     /// Controller responsável pelo gerenciamento de categorias de chamados.
     /// </summary>
-    [Route("api/[controller]")]
+    [Route("api/chamado-ti/categorias")]
     [ApiController]
     public class CategoriasController : ControllerBase
     {

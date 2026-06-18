@@ -1,6 +1,6 @@
 ﻿namespace InternalHelpDeskApi.Domain.Enums;
 
-public enum StatusChamadoEnum
+public enum StatusEnum
 {
     Aberto = 1,
     EmAtendimento = 2,

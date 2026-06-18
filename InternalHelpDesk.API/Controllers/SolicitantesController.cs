@@ -7,7 +7,7 @@ namespace InternalHelpDesk.API.Controllers
     /// <summary>
     /// Controller responsável pelo gerenciamento de solicitantes.
     /// </summary>
-    [Route("api/[controller]")]
+    [Route("api/chamado-ti/solicitantes")]
     [ApiController]
     public class SolicitantesController : ControllerBase
     {

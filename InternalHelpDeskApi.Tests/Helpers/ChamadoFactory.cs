@@ -13,7 +13,7 @@ namespace InternalHelpDeskApi.Tests.Helpers
             int categoriaId = 1,
             int prioridadeId = 1,
             int solicitanteId = 1,
-            StatusChamadoEnum status = StatusChamadoEnum.Aberto)
+            StatusEnum status = StatusEnum.Aberto)
         {
             return new Chamados
             {
@@ -47,7 +47,7 @@ namespace InternalHelpDeskApi.Tests.Helpers
             int categoriaId = 1,
             int prioridadeId = 1,
             int solicitanteId = 1,
-            StatusChamadoEnum status = StatusChamadoEnum.Aberto)
+            StatusEnum status = StatusEnum.Aberto)
         {
             return new ChamadosDto
             {

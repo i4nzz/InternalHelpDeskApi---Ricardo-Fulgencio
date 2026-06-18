@@ -45,10 +45,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Em Docker, se a API estiver só em HTTP, essa linha pode atrapalhar.
-// Se der problema de redirecionamento HTTPS, comente ela.
-// app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.MapControllers();
