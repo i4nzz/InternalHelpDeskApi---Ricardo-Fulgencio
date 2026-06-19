@@ -1,9 +1,9 @@
-﻿using InternalHelpDeskApi.Application.Interfaces.UseCases.PriorityHeap;
+﻿using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Domain.Entities;
 
 namespace InternalHelpDeskApi.Domain.Services
 {
-    public class PriorityComparerUseCase : IComparer<Chamados>, IPriorityHeap
+    public class PriorityComparerUseCase : IComparer<Chamados>, IPriorityComparerUseCase
     {
         public int Compare(Chamados? x, Chamados? y)
         {
