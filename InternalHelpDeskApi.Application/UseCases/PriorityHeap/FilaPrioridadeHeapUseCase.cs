@@ -1,6 +1,6 @@
 ﻿using InternalHelpDeskApi.Application.Interfaces.UseCases.PriorityHeap;
 
-namespace InternalHelpDeskApi.Infrastructure.Structures
+namespace InternalHelpDeskApi.Application.UseCases.PriorityHeap
 {
     public class FilaPrioridadeHeapUseCase<T> : IFilaPrioridadeHeapUseCase<T>
     {

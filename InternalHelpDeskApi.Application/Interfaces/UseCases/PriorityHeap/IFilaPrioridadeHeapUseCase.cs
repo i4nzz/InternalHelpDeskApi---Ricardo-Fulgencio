@@ -2,7 +2,9 @@
 {
     public interface IFilaPrioridadeHeapUseCase<T>
     {
-        public void Enfileirar(T item);
-        public T Desenfileirar();
+        int Contagem { get; }
+        bool EstaVazia { get; }
+        void Enfileirar(T item);
+        T Desenfileirar();
     }
 }

@@ -11,5 +11,5 @@ public class ChamadosDto
     public int PrioridadeId { get; set; }
     public StatusEnum Status { get; set; } = StatusEnum.Aberto;
     public int SolicitanteId { get; set; }
-    public int AtendenteId { get; set; }
+    public int? AtendenteId { get; set; }
 }

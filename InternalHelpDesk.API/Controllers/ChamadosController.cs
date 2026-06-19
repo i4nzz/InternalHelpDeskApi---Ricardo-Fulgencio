@@ -18,6 +18,7 @@ namespace InternalHelpDesk.API.Controllers
         private readonly ICriarChamadoUseCase _criarChamadoUseCase;
         private readonly IUpdateChamadoUseCase _updateChamadoUseCase;
         private readonly IObterListaDeChamadosOrdenadosUseCase _obterListaDeChamadosOrdenadosUseCase;
+        private readonly IBuscarChamadoUrgenteUseCase _buscarChamadoUrgenteUseCase;
         private readonly IChamadosUrgentesUseCase _chamadosUrgentesUseCase;
         private readonly IGetChamadoByDescUseCase _getChamadoByDescUseCase;
         private readonly IGetChamadosByCPFSolicitanteUseCase _getChamadosByCPFSolicitanteUseCase;
@@ -29,6 +30,7 @@ namespace InternalHelpDesk.API.Controllers
             ICriarChamadoUseCase criarChamadoUseCase,
             IUpdateChamadoUseCase updateChamadoUseCase,
             IObterListaDeChamadosOrdenadosUseCase obterListaDeChamadosOrdenadosUseCase,
+            IBuscarChamadoUrgenteUseCase buscarChamadoUrgenteUseCase,
             IChamadosUrgentesUseCase chamadosUrgentesUseCase,
             IGetChamadoByDescUseCase getChamadoByDescUseCase,
             IGetChamadosByCPFSolicitanteUseCase getChamadosByCPFSolicitanteUseCase)
@@ -39,6 +41,7 @@ namespace InternalHelpDesk.API.Controllers
             _criarChamadoUseCase = criarChamadoUseCase;
             _updateChamadoUseCase = updateChamadoUseCase;
             _obterListaDeChamadosOrdenadosUseCase = obterListaDeChamadosOrdenadosUseCase;
+            _buscarChamadoUrgenteUseCase = buscarChamadoUrgenteUseCase;
             _chamadosUrgentesUseCase = chamadosUrgentesUseCase;
             _getChamadoByDescUseCase = getChamadoByDescUseCase;
             _getChamadosByCPFSolicitanteUseCase = getChamadosByCPFSolicitanteUseCase;
@@ -179,7 +182,7 @@ namespace InternalHelpDesk.API.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetChamadoUrgente()
         {
-            var result = await _chamadosUrgentesUseCase.BuscarChamadoUrgente();
+            var result = await _buscarChamadoUrgenteUseCase.BuscarChamadoUrgente();
             return Ok(result);
         }
 

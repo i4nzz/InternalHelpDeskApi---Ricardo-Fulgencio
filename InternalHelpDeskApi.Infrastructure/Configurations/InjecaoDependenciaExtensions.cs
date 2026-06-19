@@ -3,8 +3,11 @@ using global::InternalHelpDeskApi.Infrastructure.Persistence;
 using global::InternalHelpDeskApi.Infrastructure.Repositories;
 using InternalHelpDeskApi.Application;
 using InternalHelpDeskApi.Application.Interfaces;
+using InternalHelpDeskApi.Application.Interfaces.UseCases.PriorityHeap;
 using InternalHelpDeskApi.Application.UseCases;
+using InternalHelpDeskApi.Application.UseCases.PriorityHeap;
 using InternalHelpDeskApi.Applications;
+using InternalHelpDeskApi.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -60,6 +63,17 @@ namespace InternalHelpDeskApi.Infrastructure.Configurations
             services.AddScoped<ICriarSolicitanteUseCase, CriarSolicitanteUseCase>();
             services.AddScoped<IUpdateSolicitanteUseCase, UpdateSolicitanteUseCase>();
             services.AddScoped<IDeleteSolicitanteUseCase, DeleteSolicitanteUseCase>();
+
+            // Priority Heap Services
+            services.AddScoped<PriorityComparerUseCase>();
+            services.AddScoped<IPriorityComparerUseCase>(serviceProvider =>
+                serviceProvider.GetRequiredService<PriorityComparerUseCase>());
+            services.AddScoped<IComparer<Chamados>>(serviceProvider =>
+                serviceProvider.GetRequiredService<PriorityComparerUseCase>());
+            services.AddScoped(typeof(IFilaPrioridadeHeapUseCase<>), typeof(FilaPrioridadeHeapUseCase<>));
+
+            // Additional UseCases
+            services.AddScoped<IBuscarChamadoUrgenteUseCase, BuscarChamadoUrgenteUseCase>();
 
             return services;
         }

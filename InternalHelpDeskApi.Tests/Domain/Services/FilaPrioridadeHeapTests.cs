@@ -1,6 +1,6 @@
-﻿using InternalHelpDeskApi.Domain.Entities;
-using InternalHelpDeskApi.Domain.Services;
-using InternalHelpDeskApi.Infrastructure.Structures;
+﻿using InternalHelpDeskApi.Application.Interfaces.UseCases.PriorityHeap;
+using InternalHelpDeskApi.Application.UseCases.PriorityHeap;
+using InternalHelpDeskApi.Domain.Entities;
 
 namespace InternalHelpDeskApi.Tests.Domain.Services
 {
@@ -9,7 +9,8 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void Enfileirar_DeveAdicionarChamadoNaFila()
         {
-            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
+            IPriorityComparerUseCase comparer = new PriorityComparerUseCase();
+            IFilaPrioridadeHeapUseCase<Chamados> fila = new FilaPrioridadeHeapUseCase<Chamados>(comparer);
 
             var chamado = CriarChamado(
                 id: 1,
@@ -28,7 +29,8 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void Desenfileirar_DeveRetornarChamadoComMaiorPrioridadePrimeiro()
         {
-            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
+            IPriorityComparerUseCase comparer = new PriorityComparerUseCase();
+            IFilaPrioridadeHeapUseCase<Chamados> fila = new FilaPrioridadeHeapUseCase<Chamados>(comparer);
 
             var chamadoBaixaPrioridade = CriarChamado(
                 id: 1,
@@ -59,7 +61,8 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void Desenfileirar_DeveAplicarDesempatePorData_QuandoChamadosTiveremMesmaPrioridade()
         {
-            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
+            IPriorityComparerUseCase comparer = new PriorityComparerUseCase();
+            IFilaPrioridadeHeapUseCase<Chamados> fila = new FilaPrioridadeHeapUseCase<Chamados>(comparer);
 
             var chamadoMaisAntigo = CriarChamado(
                 id: 1,
@@ -89,7 +92,8 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void Desenfileirar_DeveLancarExcecao_QuandoFilaEstiverVazia()
         {
-            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
+            IPriorityComparerUseCase comparer = new PriorityComparerUseCase();
+            IFilaPrioridadeHeapUseCase<Chamados> fila = new FilaPrioridadeHeapUseCase<Chamados>(comparer);
 
             var exception = Assert.Throws<InvalidOperationException>(() => fila.Desenfileirar());
 
@@ -99,7 +103,8 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void EstaVazia_DeveRetornarTrue_QuandoNaoExistiremChamados()
         {
-            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
+            IPriorityComparerUseCase comparer = new PriorityComparerUseCase();
+            IFilaPrioridadeHeapUseCase<Chamados> fila = new FilaPrioridadeHeapUseCase<Chamados>(comparer);
 
             Assert.True(fila.EstaVazia);
             Assert.Equal(0, fila.Contagem);

@@ -1,4 +1,5 @@
 ﻿using InternalHelpDeskApi.Application.Interfaces;
+using InternalHelpDeskApi.Application.Interfaces.UseCases.PriorityHeap;
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 

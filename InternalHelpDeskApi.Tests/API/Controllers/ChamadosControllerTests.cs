@@ -16,6 +16,7 @@ namespace InternalHelpDeskApi.Tests.API.Controllers
         private readonly Mock<ICriarChamadoUseCase> _criarChamadoUseCaseMock = new();
         private readonly Mock<IUpdateChamadoUseCase> _updateChamadoUseCaseMock = new();
         private readonly Mock<IObterListaDeChamadosOrdenadosUseCase> _obterListaDeChamadosOrdenadosUseCaseMock = new();
+        private readonly Mock<IBuscarChamadoUrgenteUseCase> _buscarChamadoUrgenteUseCaseMock = new();
         private readonly Mock<IChamadosUrgentesUseCase> _chamadosUrgentesUseCaseMock = new();
         private readonly Mock<IGetChamadoByDescUseCase> _getChamadoByDescUseCaseMock = new();
         private readonly Mock<IGetChamadosByCPFSolicitanteUseCase> _getChamadosByCPFSolicitanteUseCaseMock = new();
@@ -29,6 +30,7 @@ namespace InternalHelpDeskApi.Tests.API.Controllers
                 _criarChamadoUseCaseMock.Object,
                 _updateChamadoUseCaseMock.Object,
                 _obterListaDeChamadosOrdenadosUseCaseMock.Object,
+                _buscarChamadoUrgenteUseCaseMock.Object,
                 _chamadosUrgentesUseCaseMock.Object,
                 _getChamadoByDescUseCaseMock.Object,
                 _getChamadosByCPFSolicitanteUseCaseMock.Object
