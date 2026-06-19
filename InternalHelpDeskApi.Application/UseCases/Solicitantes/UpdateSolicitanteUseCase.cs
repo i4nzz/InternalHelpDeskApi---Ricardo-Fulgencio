@@ -1,8 +1,8 @@
 using InternalHelpDeskApi.Application.DTOs.Solicitantes;
-using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Domain.Interfaces;
 
-namespace InternalHelpDeskApi.Application.UseCases.Solicitantes
+namespace InternalHelpDeskApi.Applications
 {
     public class UpdateSolicitanteUseCase : IUpdateSolicitanteUseCase
     {

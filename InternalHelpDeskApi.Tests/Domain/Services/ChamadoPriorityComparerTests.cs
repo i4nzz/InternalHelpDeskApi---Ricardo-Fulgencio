@@ -24,7 +24,7 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
                 criadoEm: new DateTime(2026, 06, 18, 8, 0, 0)
             );
 
-            var comparer = new ChamadoPriorityComparer();
+            var comparer = new PriorityComparerUseCase();
 
             var resultado = comparer.Compare(chamadoMaiorPrioridade, chamadoMenorPrioridade);
 
@@ -50,7 +50,7 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
                 criadoEm: new DateTime(2026, 06, 18, 10, 0, 0)
             );
 
-            var comparer = new ChamadoPriorityComparer();
+            var comparer = new PriorityComparerUseCase();
 
             var resultado = comparer.Compare(chamadoMaisNovo, chamadoMaisAntigo);
 
@@ -78,7 +78,7 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
                 criadoEm: dataCriacao
             );
 
-            var comparer = new ChamadoPriorityComparer();
+            var comparer = new PriorityComparerUseCase();
 
             var resultado = comparer.Compare(chamado1, chamado2);
 

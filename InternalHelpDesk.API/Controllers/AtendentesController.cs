@@ -1,5 +1,5 @@
 using InternalHelpDeskApi.Application.DTOs.Atendentes;
-using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InternalHelpDesk.API.Controllers

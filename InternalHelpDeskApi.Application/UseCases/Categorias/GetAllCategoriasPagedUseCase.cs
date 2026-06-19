@@ -1,8 +1,8 @@
-using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 
-namespace InternalHelpDeskApi.Application.UseCases.Categorias
+namespace InternalHelpDeskApi.Application
 {
     public class GetAllCategoriasPagedUseCase : IGetAllCategoriasPagedUseCase
     {

@@ -730,7 +730,7 @@ Esse teste valida o caso de uso responsável por criar chamados.
 A classe testada é:
 
 ```text
-InternalHelpDeskApi.Application/UseCases/Chamados/CriarChamadoUseCase.cs
+InternalHelpDeskApi.Application/CriarChamadoUseCase.cs
 ```
 
 O use case recebe um `ChamadosDto`, converte para a entidade `Chamados` usando Mapster e chama o repositório para salvar.
@@ -760,7 +760,7 @@ Esses testes validam o caso de uso responsável pela exclusão lógica de chamad
 A classe testada é:
 
 ```text
-InternalHelpDeskApi.Application/UseCases/Chamados/SoftDeleteChamadoUseCases.cs
+InternalHelpDeskApi.Application/SoftDeleteChamadoUseCases.cs
 ```
 
 A exclusão lógica significa que o chamado não precisa ser removido fisicamente do banco. Em vez disso, ele pode ser marcado como excluído ou inativo conforme a regra do repositório.
@@ -800,7 +800,7 @@ Esse teste valida o caso de uso responsável por atualizar chamados.
 A classe testada é:
 
 ```text
-InternalHelpDeskApi.Application/UseCases/Chamados/UpdateChamadoUseCase.cs
+InternalHelpDeskApi.Application/UpdateChamadoUseCase.cs
 ```
 
 O use case recebe o ID do chamado e um DTO com os novos dados. Em seguida, converte o DTO para a entidade `Chamados`, define o ID informado e chama o repositório.

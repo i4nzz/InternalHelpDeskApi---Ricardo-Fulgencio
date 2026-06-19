@@ -1,9 +1,9 @@
 using InternalHelpDeskApi.Application.DTOs.Atendentes;
-using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 
-namespace InternalHelpDeskApi.Application.UseCases.Atendentes
+namespace InternalHelpDeskApi.Applications
 {
     public class CriarAtendenteUseCase : ICriarAtendenteUseCase
     {

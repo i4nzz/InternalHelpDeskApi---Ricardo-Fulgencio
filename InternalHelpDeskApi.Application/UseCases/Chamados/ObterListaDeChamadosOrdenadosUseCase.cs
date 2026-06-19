@@ -1,4 +1,4 @@
-﻿using InternalHelpDeskApi.Application.Interfaces.UseCases;
+﻿using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 using InternalHelpDeskApi.Domain.Services;
@@ -19,8 +19,8 @@ namespace InternalHelpDeskApi.Application.UseCases
         {
             List<Chamados> chamadosAbertos = await _chamadoRepository.GetAllOpen();
 
-            var regrasDePrioridade = new ChamadoPriorityComparer();
-            var filaDeAtendimento = new FilaPrioridadeHeap<Chamados>(regrasDePrioridade);
+            var regrasDePrioridade = new PriorityComparerUseCase();
+            var filaDeAtendimento = new FilaPrioridadeHeapUseCase<Chamados>(regrasDePrioridade);
 
             foreach (var chamado in chamadosAbertos)
             {

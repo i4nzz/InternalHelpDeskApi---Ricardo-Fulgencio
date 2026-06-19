@@ -2,12 +2,9 @@
 using global::InternalHelpDeskApi.Infrastructure.Persistence;
 using global::InternalHelpDeskApi.Infrastructure.Repositories;
 using InternalHelpDeskApi.Application;
-using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Application.UseCases;
-using InternalHelpDeskApi.Application.UseCases.Categorias;
-using InternalHelpDeskApi.Application.UseCases.Prioridades;
-using InternalHelpDeskApi.Application.UseCases.Atendentes;
-using InternalHelpDeskApi.Application.UseCases.Solicitantes;
+using InternalHelpDeskApi.Applications;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

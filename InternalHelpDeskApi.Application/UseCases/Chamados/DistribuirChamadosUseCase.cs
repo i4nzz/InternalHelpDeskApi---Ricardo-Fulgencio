@@ -1,27 +1,28 @@
-﻿using InternalHelpDeskApi.Application.Interfaces.UseCases;
+﻿using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Domain.Entities;
-using InternalHelpDeskApi.Domain.Interfaces; 
-using InternalHelpDeskApi.Domain.Services;
-using InternalHelpDeskApi.Infrastructure.Structures;
+using InternalHelpDeskApi.Domain.Interfaces;
 
-namespace InternalHelpDeskApi.Application.UseCases
+namespace InternalHelpDeskApi.Application
 {
     public class DistribuirProximoChamadoUseCase : IChamadosUrgentesUseCase
     {
         private readonly IChamadoRepository _chamadoRepository;
         private readonly IAtendenteRepository _atendenteRepository;
-
-        public DistribuirProximoChamadoUseCase(IChamadoRepository chamadoRepository, IAtendenteRepository atendenteRepository)
+        private readonly IPriorityComparerUseCase _priorityComparerUseCase;
+        private readonly IBuscarChamadoUrgenteUseCase _buscarChamadoUrgenteUseCase;
+        public DistribuirProximoChamadoUseCase(IChamadoRepository chamadoRepository, IAtendenteRepository atendenteRepository, IPriorityComparerUseCase priorityComparerUseCase, IBuscarChamadoUrgenteUseCase buscarChamadoUrgenteUseCase)
         {
             _chamadoRepository = chamadoRepository;
             _atendenteRepository = atendenteRepository;
+            _priorityComparerUseCase = priorityComparerUseCase;
+            _buscarChamadoUrgenteUseCase = buscarChamadoUrgenteUseCase;
         }
 
         public async Task<Chamados?> DistribuirProximoChamado(int atendenteId)
         {
             var atendente = await _atendenteRepository.GetById(atendenteId);
 
-            var chamadoUrgente = await BuscarChamadoUrgente();
+            var chamadoUrgente = await _buscarChamadoUrgenteUseCase.BuscarChamadoUrgente();
             if (chamadoUrgente != null)
             {
                 chamadoUrgente.Atendente = atendente;
@@ -29,24 +30,6 @@ namespace InternalHelpDeskApi.Application.UseCases
                 await _chamadoRepository.UpdateAsync(chamadoUrgente);
             }
             return chamadoUrgente;
-        }
-        public async Task<Chamados?> BuscarChamadoUrgente()
-        {
-            List<Chamados> chamadosAbertos = await _chamadoRepository.GetAllOpen();
-
-            if (chamadosAbertos.Count == 0)
-                return null;
-
-            var regrasDePrioridade = new ChamadoPriorityComparer();
-            var filaDeAtendimento = new FilaPrioridadeHeap<Chamados>(regrasDePrioridade);
-
-            foreach (var chamado in chamadosAbertos)
-            {
-                filaDeAtendimento.Enfileirar(chamado);
-            }
-
-            Chamados chamadoMaisUrgente = filaDeAtendimento.Desenfileirar();
-            return chamadoMaisUrgente;
         }
 
     }

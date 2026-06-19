@@ -9,7 +9,7 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void Enfileirar_DeveAdicionarChamadoNaFila()
         {
-            var fila = new FilaPrioridadeHeap<Chamados>(new ChamadoPriorityComparer());
+            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
 
             var chamado = CriarChamado(
                 id: 1,
@@ -28,7 +28,7 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void Desenfileirar_DeveRetornarChamadoComMaiorPrioridadePrimeiro()
         {
-            var fila = new FilaPrioridadeHeap<Chamados>(new ChamadoPriorityComparer());
+            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
 
             var chamadoBaixaPrioridade = CriarChamado(
                 id: 1,
@@ -59,7 +59,7 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void Desenfileirar_DeveAplicarDesempatePorData_QuandoChamadosTiveremMesmaPrioridade()
         {
-            var fila = new FilaPrioridadeHeap<Chamados>(new ChamadoPriorityComparer());
+            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
 
             var chamadoMaisAntigo = CriarChamado(
                 id: 1,
@@ -89,7 +89,7 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void Desenfileirar_DeveLancarExcecao_QuandoFilaEstiverVazia()
         {
-            var fila = new FilaPrioridadeHeap<Chamados>(new ChamadoPriorityComparer());
+            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
 
             var exception = Assert.Throws<InvalidOperationException>(() => fila.Desenfileirar());
 
@@ -99,7 +99,7 @@ namespace InternalHelpDeskApi.Tests.Domain.Services
         [Fact]
         public void EstaVazia_DeveRetornarTrue_QuandoNaoExistiremChamados()
         {
-            var fila = new FilaPrioridadeHeap<Chamados>(new ChamadoPriorityComparer());
+            var fila = new FilaPrioridadeHeapUseCase<Chamados>(new PriorityComparerUseCase());
 
             Assert.True(fila.EstaVazia);
             Assert.Equal(0, fila.Contagem);

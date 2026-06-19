@@ -1,9 +1,9 @@
 using InternalHelpDeskApi.Application.DTOs.Solicitantes;
-using InternalHelpDeskApi.Application.Interfaces.UseCases;
+using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Domain.Entities;
 using InternalHelpDeskApi.Domain.Interfaces;
 
-namespace InternalHelpDeskApi.Application.UseCases.Solicitantes
+namespace InternalHelpDeskApi.Applications
 {
     public class CriarSolicitanteUseCase : ICriarSolicitanteUseCase
     {

@@ -1,4 +1,4 @@
-﻿using InternalHelpDeskApi.Application.Interfaces.UseCases;
+﻿using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Domain.Interfaces;
 
 namespace InternalHelpDeskApi.Application

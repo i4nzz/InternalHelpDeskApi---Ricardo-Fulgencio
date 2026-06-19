@@ -1,4 +1,4 @@
-﻿using InternalHelpDeskApi.Application.Interfaces.UseCases;
+﻿using InternalHelpDeskApi.Application.Interfaces;
 using InternalHelpDeskApi.Application.UseCases;
 using InternalHelpDeskApi.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
